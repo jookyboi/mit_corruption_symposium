@@ -1,1 +1,145 @@
-// Your custom SCSS should be written here...
+// Colors
+$white: white;
+$black: black;
+
+$dark_gray: #777;
+
+$light_red: #F39385;
+$red: #BB4836;
+$dark_red: #892212;
+$beige: #E8E6DF;
+
+$font-bold: 700;
+
+// Icons
+.icon-downwards {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+
+  background: url('img/downwards.png') no-repeat 0 0;
+}
+
+// Buttons
+.button {
+  display: inline-block;
+  padding: 10px 18px;
+
+  background-color: $red;
+  color: $white;
+  font-weight: $font-bold;
+  border-radius: 5px;
+
+  transition: background-color 0.1s;
+
+  &:hover {
+    background-color: $dark_red;
+    color: $white;
+  }
+}
+
+// Page
+body {
+  font-family: 'Open Sans', Arial, sans-serif;
+
+  > header {
+    padding: 15px 0;
+
+    color: $white;
+    background-color: $red;
+
+    .logo {
+      font-size: 20px;
+    }
+
+    .nav-container {
+      text-align: right;
+
+      >nav {
+        display: inline-block;
+        text-transform: uppercase;
+
+        >a {
+          display: inline-block;
+          margin-left: 25px;
+
+          color: $white;
+          font-weight: $font-bold;
+          font-size: 14px;
+
+          transition: color 0.1s;
+
+          &:first-child {
+            margin: 0;
+          }
+
+          &:hover {
+            color: $black;
+          }
+        }
+      }
+    }
+  }
+
+  #hero {
+    height: 330px;
+
+    color: $white;
+    background-color: $black;
+
+    em {
+      font-style: normal;
+      color: $red;
+    }
+
+    .hero-left {
+      margin-top: 50px;
+      text-align: center;
+
+      border-right: 1px solid $dark_gray;
+
+      p {
+        font-weight: $font-bold;
+      }
+
+      .money-source {
+        display: block;
+        text-transform: uppercase;
+      }
+
+      .money-figure {
+        margin: 10px 0;
+
+        display: block;
+        text-transform: uppercase;
+
+        color: $red;
+        font-size: 40px;
+      }
+
+      .info-source {
+        display: block;
+
+        margin-top: 30px;
+        font-size: 10px;
+
+        color: $dark_gray;
+      }
+    }
+
+    .hero-right {
+      margin-top: 50px;
+      padding-left: 30px;
+
+      >h2 {
+        font-size: 40px;
+        color: $white;
+      }
+
+      .date-location {
+        display: block;
+        margin-bottom: 20px;
+      }
+    }
+  }
+}
