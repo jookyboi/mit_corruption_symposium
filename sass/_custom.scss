@@ -2,14 +2,13 @@
 $white: white;
 $black: black;
 
+$light_gray: #eee;
 $dark_gray: #777;
 
 $light_red: #F39385;
 $red: #BB4836;
 $dark_red: #892212;
 $beige: #E8E6DF;
-
-$font-bold: 700;
 
 // Icons
 .icon-downwards {
@@ -27,7 +26,7 @@ $font-bold: 700;
 
   background-color: $red;
   color: $white;
-  font-weight: $font-bold;
+  font-weight: $font-weight-bold;
   border-radius: 5px;
 
   transition: background-color 0.1s;
@@ -55,16 +54,16 @@ body {
     .nav-container {
       text-align: right;
 
-      >nav {
+      > nav {
         display: inline-block;
         text-transform: uppercase;
 
-        >a {
+        > a {
           display: inline-block;
           margin-left: 25px;
 
           color: $white;
-          font-weight: $font-bold;
+          font-weight: $font-weight-bold;
           font-size: 14px;
 
           transition: color 0.1s;
@@ -99,7 +98,7 @@ body {
       border-right: 1px solid $dark_gray;
 
       p {
-        font-weight: $font-bold;
+        font-weight: $font-weight-bold;
       }
 
       .money-source {
@@ -131,7 +130,7 @@ body {
       margin-top: 50px;
       padding-left: 30px;
 
-      >h2 {
+      > h2 {
         font-size: 40px;
         color: $white;
       }
@@ -140,6 +139,61 @@ body {
         display: block;
         margin-bottom: 20px;
       }
+
+      .button {
+        padding: 10px 25px;
+        text-transform: uppercase;
+      }
+
+      .share {
+        display: inline-block;
+
+        .share-email {
+          width: 20px;
+          height: 20px;
+
+          background: url('/img/email_icon.png') no-repeat 0 0;
+        }
+      }
+    }
+  }
+
+  .sub-hero {
+    padding: 40px 0;
+    background-color: $beige;
+    text-align: center;
+
+    p {
+      @include font-size(22px);
+    }
+  }
+
+  .sub-content {
+    position: relative;
+    padding: 40px 0;
+
+    h2 {
+      text-transform: uppercase;
+      text-align: center;
+
+      background-color: $white;
+    }
+  }
+
+  .speakers {
+    .person {
+      position: relative;
+      margin-top: 30px;
+
+      .quote {
+        position: absolute;
+        background: $black;
+        opacity: 0.7;
+
+        color: $white;
+      }
+
+
     }
   }
 }
