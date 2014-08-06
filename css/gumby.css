@@ -1711,6 +1711,13 @@ body #hero .hero-right .share .share-email { width: 20px; height: 20px; backgrou
 body .sub-hero { padding: 40px 0; background-color: #e8e6df; text-align: center; }
 body .sub-hero p { font-size: 22px; font-size: 1.375rem; }
 body .sub-content { position: relative; padding: 40px 0; }
-body .sub-content h2 { text-transform: uppercase; text-align: center; background-color: white; }
+body .sub-content h2 { text-transform: uppercase; text-align: center; }
+body .sub-content h2.light { color: #eeeeee; }
 body .speakers .person { position: relative; margin-top: 30px; }
-body .speakers .person .quote { position: absolute; background: black; opacity: 0.7; color: white; }
+body .speakers .person img { margin-bottom: -7px; }
+body .speakers .person .quote { width: 100%; padding: 15px; background: black; color: white; text-align: center; }
+body .speakers .person .name { padding: 15px; background-color: #bb4836; color: white; text-align: center; font-size: 26px; font-size: 1.625rem; font-weight: 700; }
+body .speakers .person .bio { padding: 10px; font-size: 14px; font-size: 0.875rem; }
+body .schedule { background-color: black; color: white; }
+body .schedule p { font-size: 22px; font-size: 1.375rem; text-align: center; }
+body .schedule p:first-child { margin-top: 30px; }
