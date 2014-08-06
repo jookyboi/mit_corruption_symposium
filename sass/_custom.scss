@@ -41,6 +41,10 @@ $beige: #E8E6DF;
 body {
   font-family: 'Open Sans', Arial, sans-serif;
 
+  a:hover {
+    color: $dark_red;
+  }
+
   > header {
     padding: 15px 0;
 
