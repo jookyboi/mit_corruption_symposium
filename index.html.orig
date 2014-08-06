@@ -199,6 +199,13 @@
                 <div class="quote">Average citizens have little or no independent influence</div>
                 <div class="name">Martin Gilens</div>
                 <div class="bio">
+<<<<<<< HEAD
+                    Professor of Politics at Princeton University and author of “Affluence and Influence: Economic
+                    Inequality and Political Power in America”, Gilens has been studying how the wealthy have undue sway
+                    on American politics. The author recently published a study with Benjamin Page of Northwestern
+                    University showing how average citizens have little influence on policy outcomes. When economic
+                    elites and business groups disagreed with the public, the affluent won.
+=======
                     Professor of Politics at Princeton University, <a href="http://scholar.princeton.edu/mgilens">Martin
                     Gilens</a>’ research includes investigating how the wealthy have undue sway on American politics.
                     Along with Benjamin Page of Northwestern University, Gilens authored the recent paper <a
@@ -210,6 +217,7 @@
                     disagree with the public majority, legislators pass policy favoring the affluent. This study, along
                     with Gilens’ latest book,<a href="http://press.princeton.edu/titles/9836.html"><cite>Affluence and
                     Influence</cite></a>, was a major factor in motivating this symposium.
+>>>>>>> master
                 </div>
             </div>
         </div>
