@@ -1688,13 +1688,15 @@ table.rounded thead th, table.rounded thead td, table.rounded caption + tbody tr
 .button:hover { background-color: #892212; color: white; }
 
 body { font-family: 'Open Sans', Arial, sans-serif; }
-body h2 { font-size: 1.4rem; }
 body a:hover { color: #892212; }
+body a.light { color: #f39385; }
+body a.light:hover { color: white; }
+body a.light:active { color: white; }
 body > header { padding: 15px 0; color: white; background-color: #bb4836; }
 body > header .logo { font-size: 20px; }
 body > header .nav-container { text-align: right; }
 body > header .nav-container > nav { display: inline-block; text-transform: uppercase; }
-body > header .nav-container > nav > a { display: inline-block; margin-left: 25px; color: white; font-weight: 700; font-size: 14px; transition: color 0.1s; }
+body > header .nav-container > nav > a { display: inline-block; margin-left: 25px; color: white; font-weight: 700; font-size: 14px; font-size: 0.875rem; transition: color 0.1s; }
 body > header .nav-container > nav > a:first-child { margin: 0; }
 body > header .nav-container > nav > a:hover { color: black; }
 body #hero { height: 330px; color: white; background-color: black; }
@@ -1702,10 +1704,10 @@ body #hero em { font-style: normal; color: #bb4836; }
 body #hero .hero-left { margin-top: 50px; text-align: center; border-right: 1px solid #777777; }
 body #hero .hero-left p { font-weight: 700; }
 body #hero .hero-left .money-source { display: block; text-transform: uppercase; }
-body #hero .hero-left .money-figure { margin: 10px 0; display: block; text-transform: uppercase; color: #bb4836; font-size: 40px; }
-body #hero .hero-left .info-source { display: block; margin-top: 30px; font-size: 10px; color: #777777; }
+body #hero .hero-left .money-figure { margin: 10px 0; display: block; text-transform: uppercase; color: #bb4836; font-size: 40px; font-size: 2.5rem; }
+body #hero .hero-left .info-source { display: block; margin-top: 30px; font-size: 10px; font-size: 0.625rem; color: #777777; }
 body #hero .hero-right { margin-top: 50px; padding-left: 30px; }
-body #hero .hero-right > h2 { font-size: 40px; color: white; }
+body #hero .hero-right > h2 { font-size: 40px; font-size: 2.5rem; color: white; }
 body #hero .hero-right .date-location { display: block; margin-bottom: 20px; }
 body #hero .hero-right .button { padding: 10px 25px; text-transform: uppercase; }
 body #hero .hero-right .share { display: inline-block; }
@@ -1714,11 +1716,12 @@ body #hero .hero-right .share .share-twitter { display: inline-block; }
 body .sub-hero { padding: 40px 0; background-color: #e8e6df; text-align: center; }
 body .sub-hero p { font-size: 22px; font-size: 1.375rem; }
 body .sub-content { position: relative; padding: 40px 0; }
-body .sub-content h2 { text-transform: uppercase; text-align: center; }
-body .sub-content h2.light { color: #eeeeee; }
+body .sub-content h2 { text-transform: uppercase; text-align: center; font-size: 34px; font-size: 2.125rem; }
+body .sub-content h2.light { color: #777777; }
+body .sub-content h2.light-red { color: #f39385; }
 body .speakers .person { position: relative; margin-top: 30px; }
 body .speakers .person img { margin-bottom: -7px; }
-body .speakers .person .quote { width: 100%; padding: 15px; background: black; color: white; text-align: center; }
+body .speakers .person .quote { width: 100%; padding: 15px; background: black; color: white; font-style: italic; text-align: center; font-size: 14px; font-size: 0.875rem; }
 body .speakers .person .name { padding: 15px; background-color: #bb4836; color: white; text-align: center; font-size: 26px; font-size: 1.625rem; font-weight: 700; }
 body .speakers .person .bio { padding: 10px; font-size: 14px; font-size: 0.875rem; }
 body .schedule { background-color: black; color: white; }
@@ -1728,11 +1731,7 @@ body .schedule .demphasized { font-size: 1rem; color: #eeeeee; }
 body .join-now { background-color: #e8e6df; text-align: center; }
 body .join-now .button { margin-top: 15px; padding: 10px 30px; }
 body .location { background-color: #892212; text-align: center; }
-body .location .row-fullwidth { padding: 0; max-width: none; }
-body .location .header-inverse { color: #f39385; }
-body .location .subheader { color: white; }
-body .location .link-inverse { color: #f39385; font-size: 1.625rem; }
-body .location .link-inverse:hover { color: white; }
-body .location .link-inverse:active { color: white; }
-body .location .map-embed { width: 100%; height: 400px; }
-body .location .kresge-img { height: 400px; }
+body .location h3 { margin-top: 20px; color: white; font-size: 30px; font-size: 1.875rem; }
+body .location .map-container { margin-top: 40px; }
+body .location .map-container .map-embed { width: 100%; height: 283px; }
+body .location .map-container .kresge-img { height: 400px; }

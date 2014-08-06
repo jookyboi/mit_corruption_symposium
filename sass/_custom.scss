@@ -41,12 +41,22 @@ $beige: #E8E6DF;
 body {
   font-family: 'Open Sans', Arial, sans-serif;
 
-  h2{
-  	font-size: 1.4rem;
-  }
+  a {
+    &:hover {
+      color: $dark_red;
+    }
 
-  a:hover {
-    color: $dark_red;
+    &.light {
+      color: $light_red;
+
+      &:hover {
+        color: $white;
+      }
+
+      &:active {
+        color: $white;
+      }
+    }
   }
 
   > header {
@@ -72,7 +82,7 @@ body {
 
           color: $white;
           font-weight: $font-weight-bold;
-          font-size: 14px;
+          @include font-size(14px);
 
           transition: color 0.1s;
 
@@ -121,14 +131,14 @@ body {
         text-transform: uppercase;
 
         color: $red;
-        font-size: 40px;
+        @include font-size(40px);
       }
 
       .info-source {
         display: block;
 
         margin-top: 30px;
-        font-size: 10px;
+        @include font-size(10px);
 
         color: $dark_gray;
       }
@@ -139,7 +149,7 @@ body {
       padding-left: 30px;
 
       > h2 {
-        font-size: 40px;
+        @include font-size(40px);
         color: $white;
       }
 
@@ -190,8 +200,14 @@ body {
       text-transform: uppercase;
       text-align: center;
 
+      @include font-size(34px);
+
       &.light {
-        color: $light_gray;
+        color: $dark_gray;
+      }
+
+      &.light-red {
+        color: $light_red;
       }
     }
   }
@@ -211,7 +227,10 @@ body {
 
         background: $black;
         color: $white;
+        font-style: italic;
         text-align: center;
+
+        @include font-size(14px);
       }
 
       .name {
@@ -244,12 +263,11 @@ body {
       &:first-child {
         margin-top: 30px;
       }
-
     }
 
-    .demphasized{
-    	font-size: 1rem;
-    	color: $light_gray;
+    .demphasized {
+      font-size: 1rem;
+      color: $light_gray;
     }
   }
 
@@ -264,45 +282,27 @@ body {
   }
 
   .location {
-  	.row-fullwidth{
-  		padding:0;
-  		max-width:none;
-  	}
+    background-color: $dark_red;
+    text-align: center;
 
-  	background-color: $dark_red;
-  	text-align:center;
+    h3 {
+      margin-top: 20px;
 
-  	.header-inverse{
-  		color: $light_red;
-  	}
+      color: $white;
+      @include font-size(30px);
+    }
 
-  	.subheader{
-  		color:$white;
-  	}
+    .map-container {
+      margin-top: 40px;
 
-  	.link-inverse{
-  		color: $light_red;
-  		
-  		font-size: 1.625rem;
+      .map-embed {
+        width: 100%;
+        height: 283px;
+      }
 
-  		&:hover{
-  			color:$white;
-  		}
-
-  		&:active{
-  			color:$white;
-  		}
-  	}
-
-  	.map-embed{
-  		width:100%;
-  		height:400px;
-  	}
-  	.kresge-img{
-  		height:400px;
-  	}
-
-  	
-
+      .kresge-img {
+        height: 400px;
+      }
+    }
   }
 }
