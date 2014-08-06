@@ -153,10 +153,16 @@ body {
         display: inline-block;
 
         .share-email {
-          width: 20px;
+          display: inline-block;
+          width: 26px;
           height: 20px;
 
           background: url('/img/email_icon.png') no-repeat 0 0;
+          background-size: 26px auto;
+        }
+
+        .share-twitter {
+          display: inline-block;
         }
       }
     }

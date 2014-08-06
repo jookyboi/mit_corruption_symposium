@@ -1708,7 +1708,8 @@ body #hero .hero-right > h2 { font-size: 40px; color: white; }
 body #hero .hero-right .date-location { display: block; margin-bottom: 20px; }
 body #hero .hero-right .button { padding: 10px 25px; text-transform: uppercase; }
 body #hero .hero-right .share { display: inline-block; }
-body #hero .hero-right .share .share-email { width: 20px; height: 20px; background: url("/img/email_icon.png") no-repeat 0 0; }
+body #hero .hero-right .share .share-email { display: inline-block; width: 26px; height: 20px; background: url("/img/email_icon.png") no-repeat 0 0; background-size: 26px auto; }
+body #hero .hero-right .share .share-twitter { display: inline-block; }
 body .sub-hero { padding: 40px 0; background-color: #e8e6df; text-align: center; }
 body .sub-hero p { font-size: 22px; font-size: 1.375rem; }
 body .sub-content { position: relative; padding: 40px 0; }
