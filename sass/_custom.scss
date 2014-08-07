@@ -1,6 +1,6 @@
 // Colors
 $white: white;
-$black: black;
+$black: #240905;
 
 $light_gray: #eee;
 $dark_gray: #777;
@@ -50,7 +50,7 @@ body {
       color: $light_red;
 
       &:hover {
-        color: $white;
+        color: $black;
       }
 
       &:active {
@@ -281,7 +281,7 @@ body {
     }
   }
 
-  .location {
+  .location{
     background-color: $dark_red;
     text-align: center;
 
@@ -304,5 +304,19 @@ body {
         height: 400px;
       }
     }
+  }
+
+  .aboutus{
+  		background-color: $black;
+  		p{
+  			color:$white;
+  		}
+  		abbr {
+			text-transform: uppercase;
+			font-size: 90%;
+			color: $white;
+			border-bottom:none;
+			cursor: help;
+		}
   }
 }
