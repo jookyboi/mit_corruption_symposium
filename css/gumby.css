@@ -1701,14 +1701,14 @@ body > header .nav-container > nav > a { display: inline-block; margin-left: 25p
 body > header .nav-container > nav > a:first-child { margin: 0; }
 body > header .nav-container > nav > a:last-child { color: #FFFC19; }
 body > header .nav-container > nav > a:hover { color: #240905; }
-body #hero { padding: 50px inherit; color: white; background-color: #240905; }
+body #hero { padding: 50px inherit; color: white; background: #240905 url("../img/hero_banner.jpg") 50% 0; background-size: cover; }
 body #hero em { font-style: normal; color: #bb4836; }
 body #hero .hero-left { margin-top: 50px; text-align: center; }
 body #hero .hero-left p { font-weight: 700; }
 body #hero .hero-left .money-source { display: block; text-transform: uppercase; }
 body #hero .hero-left .money-figure { margin: 10px 0; display: block; text-transform: uppercase; color: #bb4836; font-size: 40px; font-size: 2.5rem; }
 body #hero .hero-left .info-source { display: block; margin-top: 30px; font-size: 10px; font-size: 0.625rem; color: #777777; }
-body #hero .hero-right { margin-top: 50px; }
+body #hero .hero-right { margin-top: 40px; padding-left: 30px; padding-top: 20px; border-left: 1px solid rgba(255, 255, 255, 0.5); }
 body #hero .hero-right > h2 { font-size: 40px; font-size: 2.5rem; color: white; }
 body #hero .hero-right .date-location { display: block; margin-bottom: 20px; }
 body #hero .hero-right .button { padding: 10px 25px; text-transform: uppercase; }
@@ -1742,7 +1742,8 @@ body .aboutus h2 { margin-bottom: 20px; }
 body .aboutus p { color: white; }
 body .aboutus abbr { text-transform: uppercase; font-size: 90%; color: white; border-bottom: none; cursor: help; }
 
-@media only screen and (max-width: 767px) { #hero { text-align: center; }
-  #hero p { text-align: center; }
-  .sub-hero p { text-align: center; }
-  .aboutus .volunteer-container { text-align: center; margin-bottom: 20px; } }
+@media only screen and (max-width: 767px) { body #hero { text-align: center; }
+  body #hero p { text-align: center; }
+  body #hero .hero-right { border-left: none; border-top: 1px solid rgba(255, 255, 255, 0.5); padding-left: 0; padding-top: 30px; }
+  body .sub-hero p { text-align: center; }
+  body .aboutus .volunteer-container { text-align: center; margin-bottom: 20px; } }
