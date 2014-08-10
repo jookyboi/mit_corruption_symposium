@@ -16,7 +16,7 @@ $beige: #E8E6DF;
   height: 20px;
   display: inline-block;
 
-  background: url('img/downwards.png') no-repeat 0 0;
+  background: url('/img/downwards.png') no-repeat 0 0;
 }
 
 // Buttons
@@ -60,6 +60,11 @@ body {
   }
 
   > header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+
     padding: 15px 0;
 
     color: $white;
@@ -90,6 +95,10 @@ body {
             margin: 0;
           }
 
+          &:last-child {
+            color: #FFFC19;
+          }
+
           &:hover {
             color: $black;
           }
@@ -99,8 +108,7 @@ body {
   }
 
   #hero {
-    height: 330px;
-
+    padding: 50px inherit;
     color: $white;
     background-color: $black;
 
@@ -112,8 +120,6 @@ body {
     .hero-left {
       margin-top: 50px;
       text-align: center;
-
-      border-right: 1px solid $dark_gray;
 
       p {
         font-weight: $font-weight-bold;
@@ -146,7 +152,6 @@ body {
 
     .hero-right {
       margin-top: 50px;
-      padding-left: 30px;
 
       > h2 {
         @include font-size(40px);
@@ -297,7 +302,7 @@ body {
 
       .map-embed {
         width: 100%;
-        height: 283px;
+        height: 305px;
       }
 
       .kresge-img {
@@ -324,6 +329,30 @@ body {
 
       border-bottom: none;
       cursor: help;
+    }
+  }
+}
+
+// responsive layouts
+@include respond(all-phones) {
+  #hero {
+    text-align: center;
+
+    p {
+      text-align: center;
+    }
+  }
+
+  .sub-hero {
+    p {
+      text-align: center;
+    }
+  }
+
+  .aboutus {
+    .volunteer-container {
+      text-align: center;
+      margin-bottom: 20px;
     }
   }
 }

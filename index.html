@@ -74,6 +74,8 @@
     <script src="bower_components/gumby/js/plugins.js"></script>
     <script src="bower_components/gumby/js/main.js"></script>
 
+    <script src="js/jquery.scrollTo.min.js"></script>
+
     <script>
         (function(i, s, o, g, r, a, m) {
             i['GoogleAnalyticsObject'] = r;
@@ -99,6 +101,21 @@
         CFInstall.check({mode: 'overlay'})
     })</script>
     <![endif]-->
+
+    <!-- Page JS -->
+    <script>
+        $(function() {
+            $("nav>a").click(function(evt) {
+                $.scrollTo(
+                        $(this).attr("href"),
+                        500
+                );
+
+                evt.stopPropagation();
+                evt.preventDefault();
+            });
+        });
+    </script>
 </head>
 
 <body>
@@ -118,6 +135,7 @@
                 <a href="#location">Location</a>
                 <a href="#sponsors">Sponsors</a>
                 <a href="#aboutus">About Us</a>
+                <a href="#">Register</a>
             </nav>
         </div>
     </div>
@@ -138,7 +156,7 @@
                 <span class="info-source">Source: Center for Responsive Politics, 2012 Lobbying and Contribution Data</span>
             </p>
         </div>
-        <div class="six columns hero-right">
+        <div class="push_one five columns hero-right">
             <h2>Citizens Rising Conference</h2>
             <span class="date-location">Friday, Sep 19, 2014 - Cambridge, MA</span>
             <a href="#" class="button">Register</a>
@@ -282,11 +300,11 @@
 </section>
 
 <section class=" sub-content sponsors">
-<div class="row">
-    <div class="twelve columns">
-        <h2><a id="sponsors">Sponsors</a></h2>
+    <div class="row">
+        <div class="twelve columns">
+            <h2><a id="sponsors">Sponsors</a></h2>
+        </div>
     </div>
-</div>
 </section>
 
 <section class=" sub-content aboutus">
@@ -295,14 +313,18 @@
             <h2><a id="aboutus">About Us</a></h2>
         </div>
     </div>
-<div class="row">
-    <div class="push_two two columns">
-        <a href="#" class="button button-volunteer">Volunteer</a>
+    <div class="row">
+        <div class="volunteer-container push_two two columns">
+            <a href="#" class="button button-volunteer">Volunteer</a>
+        </div>
+        <div class="six columns">
+            <p>This event is being sponsored by the MIT effective altruism student group, <a
+                    href="http://www.thehighimpactnetwork.org/">The High Impact Network</a> (<abbr
+                    title="The High Impact Network">THINK</abbr>), with funding provided by the MIT Association of
+                Student Activities LEF. In addition, dozens of concerned citizens have volunteered their time and
+                skillsets, including students, engineers, artists, designers, and people just like you.</p>
+        </div>
     </div>
-    <div class="six columns">
-		<p>This event is being sponsored by the MIT effective altruism student group, <a href="http://www.thehighimpactnetwork.org/">The High Impact Network</a> (<abbr title="The High Impact Network">THINK</abbr>), with funding provided by the MIT Association of Student Activities LEF. In addition, dozens of concerned citizens have volunteered their time and skillsets, including students, engineers, artists, designers, and people just like you.</p>
-    </div>
-</div>
 </section>
 
 </body>
