@@ -235,11 +235,15 @@ body {
 
       .video-link {
         position: relative;
+        display: block;
 
         .play-button {
           position: absolute;
-          left: 213px;
-          top: -120px;
+          margin-left: -20px;
+          margin-top: -25px;
+
+          left: 50%;
+          top: 50%;
           display: inline-block;
 
           width: 50px;
