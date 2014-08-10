@@ -193,7 +193,7 @@
 
             moneyStatIndex++;
 
-            // llop
+            // loop
             if (moneyStatIndex === moneyStats.length) {
                 moneyStatIndex = 0;
             }
@@ -245,7 +245,9 @@
                 syncMapHeight();
             });
 
-            syncMapHeight();
+            $(".kresge-img").load(function() {
+                syncMapHeight();
+            });
 
             // videos
             $(".video-link").colorbox(
