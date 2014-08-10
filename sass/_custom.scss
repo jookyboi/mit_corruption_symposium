@@ -404,6 +404,11 @@ body {
 // responsive layouts
 @include respond(all-phones) {
   body {
+    >header .nav-container {
+      margin-top: 10px;
+      text-align: left;
+    }
+
     #hero {
       text-align: center;
 
