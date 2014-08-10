@@ -281,7 +281,7 @@ body {
     }
   }
 
-  .location{
+  .location {
     background-color: $dark_red;
     text-align: center;
 
@@ -306,17 +306,24 @@ body {
     }
   }
 
-  .aboutus{
-  		background-color: $black;
-  		p{
-  			color:$white;
-  		}
-  		abbr {
-			text-transform: uppercase;
-			font-size: 90%;
-			color: $white;
-			border-bottom:none;
-			cursor: help;
-		}
+  .aboutus {
+    background-color: $black;
+
+    h2 {
+      margin-bottom: 20px;
+    }
+
+    p {
+      color: $white;
+    }
+
+    abbr {
+      text-transform: uppercase;
+      font-size: 90%;
+      color: $white;
+
+      border-bottom: none;
+      cursor: help;
+    }
   }
 }
