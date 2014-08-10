@@ -315,6 +315,14 @@
         <div class="twelve columns">
             <h2 id="sponsors">Sponsors</h2>
             <ul>
+<<<<<<< HEAD
+              <li><a href="https://represent.us/"><img alt="Represent.Us" src="img/RU_Logo_Color.png"></a></li>
+               <li><a href="http://www.commoncause.org/states/massachusetts/"><img alt="Common Cause" src="img/commoncausema.png"></a></li>
+               <li><a href="http://www.wolf-pac.com/massachusetts"><img alt="Wolf PAC Massachusetts" src="img/wolfpac.png"></a></li>
+               <li><a href="https://movetoamend.org/"><img alt="Move to Amend" src="img/move2amend.jpg"></a></li>
+               <li><a href="http://www.democracymatters.org/"><img alt="Democracy Matters" src="img/democracymatters.png"></a></li>
+           </ul>
+=======
                 <li><a href="https://represent.us/" target="_blank"><img alt="Represent.Us"
                                                                          src="img/sponsors/represent_us.png"></a></li>
                 <li><a href="http://www.commoncause.org/states/massachusetts/" target="_blank"><img alt="Common Cause"
@@ -330,6 +338,7 @@
                 </li>
             </ul>
         </div>
+>>>>>>> 804e7b5c998ff71a1071fb74f3dff56436408b63
     </div>
 </section>
 
