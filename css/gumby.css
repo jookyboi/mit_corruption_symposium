@@ -1682,7 +1682,7 @@ table.rounded thead th, table.rounded thead td, table.rounded caption + tbody tr
 
 .ie9 .radio.checked i, .ie9 .checkbox.checked i { top: 0; }
 
-.icon-downwards { width: 20px; height: 20px; display: inline-block; background: url("/img/downwards.png") no-repeat 0 0; }
+.icon-downwards { width: 20px; height: 23px; display: inline-block; margin-bottom: 10px; background: url("/img/downwards.png") no-repeat 0 0; }
 
 .button { display: inline-block; padding: 10px 18px; background-color: #bb4836; color: white; font-weight: 700; border-radius: 5px; transition: background-color 0.1s; }
 .button:hover { background-color: #892212; color: white; }
