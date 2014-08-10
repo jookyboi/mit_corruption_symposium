@@ -405,8 +405,7 @@ body {
 @include respond(all-phones) {
   body {
     >header .nav-container {
-      margin-top: 10px;
-      text-align: left;
+      display: none;
     }
 
     #hero {

@@ -1834,7 +1834,7 @@ body .aboutus h2 { margin-bottom: 20px; }
 body .aboutus p { color: white; }
 body .aboutus abbr { text-transform: uppercase; font-size: 90%; color: white; border-bottom: none; cursor: help; }
 
-@media only screen and (max-width: 767px) { body > header .nav-container { margin-top: 10px; text-align: left; }
+@media only screen and (max-width: 767px) { body > header .nav-container { display: none; }
   body #hero { text-align: center; }
   body #hero p { text-align: center; }
   body #hero .hero-left { padding-top: 30px; }
