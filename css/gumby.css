@@ -1692,7 +1692,7 @@ table.rounded thead th, table.rounded thead td, table.rounded caption + tbody tr
 .button:hover { background-color: #892212; color: white; }
 
 body { font-family: 'Open Sans', Arial, sans-serif; }
-body a[href]:hover { color: #892212; }
+body a[href]:hover { color: white; }
 body a[href].light { color: #f39385; }
 body a[href].light:hover { color: #240905; }
 body a[href].light:active { color: white; }
