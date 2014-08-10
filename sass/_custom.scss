@@ -204,8 +204,10 @@ body {
     padding: 40px 0;
     background-color: $beige;
     text-align: center;
+
     h2{
-      font-size: 1.4rem;
+      margin-bottom: 15px;
+      @include font-size(22px);
       font-weight: 700;
     }
 
@@ -356,6 +358,8 @@ body {
       .map-embed {
         width: 100%;
         height: 305px;
+
+        border: 0;
       }
     }
   }

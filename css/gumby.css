@@ -1793,13 +1793,14 @@ body #hero .hero-left .money-source { display: block; text-transform: uppercase;
 body #hero .hero-left .money-figure { margin: 10px 0; display: block; text-transform: uppercase; color: #bb4836; font-size: 40px; font-size: 2.5rem; }
 body #hero .hero-left .info-source { display: block; margin-top: 30px; font-size: 10px; font-size: 0.625rem; color: #777777; }
 body #hero .hero-right { margin-top: 40px; padding-left: 30px; padding-top: 20px; border-left: 1px solid rgba(255, 255, 255, 0.5); }
-body #hero .hero-right > h2 { font-size: 40px; font-size: 2.5rem; color: white; }
+body #hero .hero-right > h2 { font-size: 40px; font-size: 2.5rem; color: white; font-weight: 600; }
 body #hero .hero-right .date-location { display: block; margin-bottom: 20px; }
 body #hero .hero-right .button { padding: 10px 25px; text-transform: uppercase; }
 body #hero .hero-right .share { display: inline-block; }
 body #hero .hero-right .share .share-email { display: inline-block; width: 26px; height: 20px; background: url("../img/email_icon.png") no-repeat 0 0; background-size: 26px auto; }
 body #hero .hero-right .share .share-twitter { display: inline-block; }
 body .sub-hero { padding: 40px 0; background-color: #e8e6df; text-align: center; }
+body .sub-hero h2 { margin-bottom: 15px; font-size: 22px; font-size: 1.375rem; font-weight: 700; }
 body .sub-hero p { font-size: 22px; font-size: 1.375rem; }
 body .sub-content { position: relative; padding: 40px 0; }
 body .sub-content h2 { text-transform: uppercase; text-align: center; font-size: 34px; font-size: 2.125rem; }
@@ -1823,7 +1824,7 @@ body .join-now .button { margin-top: 15px; padding: 10px 30px; }
 body .location { background-color: #892212; text-align: center; }
 body .location h3 { margin-top: 20px; color: white; font-size: 30px; font-size: 1.875rem; }
 body .location .map-container { margin-top: 40px; }
-body .location .map-container .map-embed { width: 100%; height: 305px; }
+body .location .map-container .map-embed { width: 100%; height: 305px; border: 0; }
 body .sponsors { text-align: center; }
 body .sponsors ul { margin: 20px 0 0 0; padding: 0; }
 body .sponsors ul > li { display: inline-block; margin-right: 20px; height: 70px; line-height: 70px; }
