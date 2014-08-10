@@ -66,32 +66,6 @@
         }
     </script>
 
-    <!--Stats for Hero's money spent per election cycle widget-->
-    <!--Unlike the Represent.Us website, I made them all use "Millions", and rounded down from any fractional values to an integer for easier comparison. I didn't want to ever round up, so that we can't be called out for exaggerating the values-->
-    <script type="text/javascript">
-
-    {“moneySpentPerIndustry”:[
-        {“millions”:”525”, “industry:”Pharmaceutical”}, 
-        {“millions”:”301”, “industry:”Defense”},
-        {“millions”:”275”, “industry:”Lobbying &amp; Legal”},
-        {“millions”:”33”, “industry:”Mortgage”},
-        {“millions”:”363”, “industry:”Oil &amp; Gas”},
-        {“millions”:”4”, “industry:”Private Prison”},
-        {“millions”:”224”, “industry:”Construction”},
-        {“millions”:”240”, “industry:”Labor”},
-        {“millions”:”561”, “industry:”Transportation”},
-        {“millions”:”1640”, “industry:”Finance”},
-        {“millions”:”485”, “industry:”Investment”},
-        {“millions”:”987”, “industry:”Communications”},
-        {“millions”:”367”, “industry:”Insurance”},
-        {“millions”:”1260”, “industry:”Health Care”},
-        {“millions”:”15”, “industry:”Gun Rights”},
-        {“millions”:”85”, “industry:”Mining”},
-        {“millions”:”266”, “industry:”Education”},
-    ]}
-
-    </script>
-
     <!--
     Include gumby.js followed by UI modules followed by gumby.init.js
     Or concatenate and minify into a single file -->
@@ -140,20 +114,74 @@
             $map.css("height", $kresge.height());
         }
 
-
         var moneyStatIndex = 0,
                 moneyStats = [
                     {
-                        source: "Agriculture Industry",
-                        figure: "$359 Million"
+                        source: "Pharmaceutical Industry",
+                        figure: "$525 Million"
                     },
                     {
-                        source: "Pharmacy Industry",
-                        figure: "$250 Million"
+                        source: "Defense Industry",
+                        figure: "$301 Million"
                     },
                     {
-                        source: "Automotive Industry",
-                        figure: "$159 Million"
+                        source: "Lobbying &amp; Legal Industry",
+                        figure: "$275 Million"
+                    }, {
+                        source: "Mortgage Industry",
+                        figure: "$33 Million"
+                    },
+                    {
+                        source: "Oil &amp; Gas Industry",
+                        figure: "$363 Million"
+                    },
+                    {
+                        source: "Private Prison Industry",
+                        figure: "$4 Million"
+                    },
+                    {
+                        source: "Construction Industry",
+                        figure: "$224 Million"
+                    },
+                    {
+                        source: "Labor",
+                        figure: "$240 Million"
+                    },
+                    {
+                        source: "Transportation Industry",
+                        figure: "$561 Million"
+                    },
+                    {
+                        source: "Finance Industry",
+                        figure: "$1640 Million"
+                    },
+                    {
+                        source: "Investment Industry",
+                        figure: "$485 Million"
+                    },
+                    {
+                        source: "Communications Industry",
+                        figure: "$987 Million"
+                    },
+                    {
+                        source: "Insurance Industry",
+                        figure: "$367 Million"
+                    },
+                    {
+                        source: "Healthcare Industry",
+                        figure: "$1260 Million"
+                    },
+                    {
+                        source: "Gun Rights",
+                        figure: "$15 Million"
+                    },
+                    {
+                        source: "Mining Industry",
+                        figure: "$85 Million"
+                    },
+                    {
+                        source: "Education Industry",
+                        figure: "$266 Million"
                     }
                 ];
 
@@ -264,8 +292,8 @@
             </p>
             <span class="icon-downwards"></span>
             <p class="money-scroller">
-                <span class="money-source">Agriculture Industry</span>
-                <span class="money-figure">$359 Million</span>
+                <span class="money-source">Pharmaceutical Industry</span>
+                <span class="money-figure">$525 Million</span>
                 <span class="info-source">Source: Center for Responsive Politics, 2012 Lobbying and Contribution Data</span>
             </p>
         </div>
