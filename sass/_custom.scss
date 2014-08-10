@@ -32,6 +32,7 @@ $beige: #E8E6DF;
   border-radius: 5px;
 
   transition: background-color 0.1s;
+  text-transform: uppercase;
 
   &:hover {
     background-color: $dark_red;
@@ -178,7 +179,6 @@ body {
 
       .button {
         padding: 10px 25px;
-        text-transform: uppercase;
       }
 
       .share {
@@ -336,6 +336,7 @@ body {
     }
 
     text-align: center;
+
     .button {
       margin-top: 15px;
       padding: 10px 30px;
@@ -374,7 +375,7 @@ body {
 
       >li {
         display: inline-block;
-        margin-right: 20px;
+        margin-right: 40px;
 
         height: 70px;
         line-height: 70px;

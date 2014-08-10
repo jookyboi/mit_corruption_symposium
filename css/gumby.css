@@ -1768,7 +1768,7 @@ table.rounded thead th, table.rounded thead td, table.rounded caption + tbody tr
 
 .icon-downwards { width: 20px; height: 23px; display: inline-block; margin-bottom: 10px; background: url("../img/downwards.png") no-repeat 0 0; }
 
-.button { display: inline-block; padding: 10px 18px; background-color: #bb4836; color: white; font-weight: 700; border-radius: 5px; transition: background-color 0.1s; }
+.button { display: inline-block; padding: 10px 18px; background-color: #bb4836; color: white; font-weight: 700; border-radius: 5px; transition: background-color 0.1s; text-transform: uppercase; }
 .button:hover { background-color: #892212; color: white; }
 
 body { font-family: 'Open Sans', Arial, sans-serif; }
@@ -1795,7 +1795,7 @@ body #hero .hero-left .info-source { display: block; margin-top: 30px; font-size
 body #hero .hero-right { margin-top: 40px; padding-left: 30px; padding-top: 20px; border-left: 1px solid rgba(255, 255, 255, 0.5); }
 body #hero .hero-right > h2 { font-size: 40px; font-size: 2.5rem; color: white; font-weight: 600; }
 body #hero .hero-right .date-location { display: block; margin-bottom: 20px; }
-body #hero .hero-right .button { padding: 10px 25px; text-transform: uppercase; }
+body #hero .hero-right .button { padding: 10px 25px; }
 body #hero .hero-right .share { display: inline-block; }
 body #hero .hero-right .share .share-email { display: inline-block; width: 26px; height: 20px; background: url("../img/email_icon.png") no-repeat 0 0; background-size: 26px auto; }
 body #hero .hero-right .share .share-twitter { display: inline-block; }
@@ -1828,7 +1828,7 @@ body .location .map-container { margin-top: 40px; }
 body .location .map-container .map-embed { width: 100%; height: 305px; border: 0; }
 body .sponsors { text-align: center; }
 body .sponsors ul { margin: 20px 0 0 0; padding: 0; }
-body .sponsors ul > li { display: inline-block; margin-right: 20px; height: 70px; line-height: 70px; }
+body .sponsors ul > li { display: inline-block; margin-right: 40px; height: 70px; line-height: 70px; }
 body .sponsors ul > li:last-child { margin: 0; }
 body .sponsors ul > li img { height: 50px; }
 body .aboutus { background-color: #240905; }
