@@ -1688,10 +1688,10 @@ table.rounded thead th, table.rounded thead td, table.rounded caption + tbody tr
 .button:hover { background-color: #892212; color: white; }
 
 body { font-family: 'Open Sans', Arial, sans-serif; }
-body a:hover { color: #892212; }
-body a.light { color: #f39385; }
-body a.light:hover { color: #240905; }
-body a.light:active { color: white; }
+body a[href]:hover { color: #892212; }
+body a[href].light { color: #f39385; }
+body a[href].light:hover { color: #240905; }
+body a[href].light:active { color: white; }
 body > header { width: 100%; position: fixed; top: 0; z-index: 100; padding: 15px 0; color: white; background-color: #892212; }
 body > header .logo { font-size: 20px; }
 body > header .logo > a { color: white; }
@@ -1701,7 +1701,7 @@ body > header .nav-container > nav > a { display: inline-block; margin-left: 25p
 body > header .nav-container > nav > a:first-child { margin: 0; }
 body > header .nav-container > nav > a:last-child { color: #FFFC19; }
 body > header .nav-container > nav > a:hover { color: #240905; }
-body #hero { padding: 50px inherit; color: white; background: #240905 url("../img/hero_banner.jpg") 50% 0; background-size: cover; }
+body #hero { padding: 50px inherit; color: white; background: #240905 url("../img/hero_banner.jpg"); background-size: cover; }
 body #hero em { font-style: normal; color: #bb4836; }
 body #hero .hero-left { margin-top: 50px; text-align: center; }
 body #hero .hero-left p { font-weight: 700; }

@@ -43,7 +43,7 @@ $beige: #E8E6DF;
 body {
   font-family: 'Open Sans', Arial, sans-serif;
 
-  a {
+  a[href] {
     &:hover {
       color: $dark_red;
     }
@@ -116,7 +116,7 @@ body {
   #hero {
     padding: 50px inherit;
     color: $white;
-    background: $black url("../img/hero_banner.jpg") 50% 0;
+    background: $black url("../img/hero_banner.jpg");
     background-size: cover;
 
     em {
