@@ -295,7 +295,10 @@ body {
 
       .bio {
         padding: 10px;
-        @include font-size(14px);
+
+        >p {
+          @include font-size(14px);
+        }
       }
     }
   }
