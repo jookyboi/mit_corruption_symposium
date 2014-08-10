@@ -1,5 +1,6 @@
 // Colors
 $white: white;
+$white_transparent: rgba(255, 255, 255, 0.5);
 $black: #240905;
 
 $light_gray: #eee;
@@ -115,7 +116,8 @@ body {
   #hero {
     padding: 50px inherit;
     color: $white;
-    background-color: $black;
+    background: $black url("../img/hero_banner.jpg") 50% 0;
+    background-size: cover;
 
     em {
       font-style: normal;
@@ -156,7 +158,9 @@ body {
     }
 
     .hero-right {
-      margin-top: 50px;
+      margin-top: 40px;
+      padding-left: 30px;
+      border-left: 1px solid $white_transparent;
 
       > h2 {
         @include font-size(40px);
@@ -340,24 +344,34 @@ body {
 
 // responsive layouts
 @include respond(all-phones) {
-  #hero {
-    text-align: center;
-
-    p {
+  body {
+    #hero {
       text-align: center;
+
+      p {
+        text-align: center;
+      }
+
+      .hero-right {
+        border-left: none;
+        border-top: 1px solid $white_transparent;
+
+        padding-left: 0;
+        padding-top: 30px;
+      }
     }
-  }
 
-  .sub-hero {
-    p {
-      text-align: center;
+    .sub-hero {
+      p {
+        text-align: center;
+      }
     }
-  }
 
-  .aboutus {
-    .volunteer-container {
-      text-align: center;
-      margin-bottom: 20px;
+    .aboutus {
+      .volunteer-container {
+        text-align: center;
+        margin-bottom: 20px;
+      }
     }
   }
 }
