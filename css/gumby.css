@@ -1840,4 +1840,5 @@ body .aboutus abbr { text-transform: uppercase; font-size: 90%; color: white; bo
   body #hero .hero-left { padding-top: 30px; }
   body #hero .hero-right { border-left: none; border-top: 1px solid rgba(255, 255, 255, 0.5); padding-left: 0; padding-top: 30px; }
   body .sub-hero p { text-align: center; }
+  body .sponsors ul { text-align: center; }
   body .aboutus .volunteer-container { text-align: center; margin-bottom: 20px; } }
