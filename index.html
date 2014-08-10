@@ -99,6 +99,25 @@
         CFInstall.check({mode: 'overlay'})
     })</script>
     <![endif]-->
+
+    <script src="js/jquery.scrollTo.min.js"></script>
+
+    <!-- Page Script -->
+    <script>
+        $(function() {
+            $("nav>a").each(function() {
+                $(this).click(function(evt) {
+                    $.scrollTo(
+                            $(this).attr("href"),
+                            500
+                    );
+
+                    evt.stopPropagation();
+                    evt.preventDefault();
+                });
+            });
+        });
+    </script>
 </head>
 
 <body>
