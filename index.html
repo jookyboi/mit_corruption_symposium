@@ -106,6 +106,13 @@
 
     <!-- Page Script -->
     <script>
+        function syncMapHeight() {
+            var $map = $(".map-embed"),
+                $kresge = $(".kresge-img");
+
+            $map.css("height", $kresge.height());
+        }
+
         $(function() {
             $("nav>a").each(function() {
                 $(this).click(function(evt) {
@@ -125,6 +132,12 @@
                 evt.stopPropagation();
                 evt.preventDefault();
             });
+
+            $(window).resize(function() {
+                syncMapHeight();
+            });
+
+            syncMapHeight();
         });
     </script>
 </head>
@@ -296,7 +309,7 @@
                     src="https://www.google.com/maps/embed/v1/place?q=Kresge%20Auditorium%2C%20Massachusetts%20Institute%20of%20Technology%2C%20Cambridge%2C%20MA%2002139&key=AIzaSyAsLixWPu4Lb5SZcaQecPoMifP4HFTM-Oo"></iframe>
         </div>
         <div class="six columns">
-            <img alt="Kresge Auditorium" src="img/kresge.png"/>
+            <img alt="Kresge Auditorium" src="img/kresge.jpg"/>
         </div>
     </div>
 </section>
