@@ -1776,7 +1776,7 @@ body a[href]:hover { color: white; }
 body a[href].light { color: #f39385; }
 body a[href].light:hover { color: #240905; }
 body a[href].light:active { color: white; }
-body > header { width: 100%; position: fixed; top: 0; z-index: 100; padding: 15px 0; color: white; background-color: #892212; }
+body > header { width: 100%; position: fixed; top: 0; z-index: 100; padding: 15px 0; color: white; background-color: #892212; box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5); }
 body > header .logo { font-size: 20px; font-weight: 700; }
 body > header .logo > a { color: white; }
 body > header .nav-container { text-align: right; }
