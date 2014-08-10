@@ -116,6 +116,13 @@
                     evt.preventDefault();
                 });
             });
+
+            $(".logo>a").click(function(evt) {
+                $.scrollTo(0, 500);
+
+                evt.stopPropagation();
+                evt.preventDefault();
+            });
         });
     </script>
 </head>
@@ -126,7 +133,7 @@
     <div class="row">
         <div class="three columns">
             <div class="logo">
-                Citizens Rising
+                <a href="#">Citizens Rising</a>
             </div>
         </div>
 

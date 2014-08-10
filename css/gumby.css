@@ -1692,8 +1692,9 @@ body a:hover { color: #892212; }
 body a.light { color: #f39385; }
 body a.light:hover { color: #240905; }
 body a.light:active { color: white; }
-body > header { width: 100%; position: fixed; top: 0; z-index: 100; padding: 15px 0; color: white; background-color: #bb4836; }
+body > header { width: 100%; position: fixed; top: 0; z-index: 100; padding: 15px 0; color: white; background-color: #892212; }
 body > header .logo { font-size: 20px; }
+body > header .logo > a { color: white; }
 body > header .nav-container { text-align: right; }
 body > header .nav-container > nav { display: inline-block; text-transform: uppercase; }
 body > header .nav-container > nav > a { display: inline-block; margin-left: 25px; color: white; font-weight: 700; font-size: 14px; font-size: 0.875rem; transition: color 0.1s; }

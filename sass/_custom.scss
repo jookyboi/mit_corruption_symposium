@@ -69,10 +69,14 @@ body {
     padding: 15px 0;
 
     color: $white;
-    background-color: $red;
+    background-color: $dark_red;
 
     .logo {
       font-size: 20px;
+
+      >a {
+        color: $white;
+      }
     }
 
     .nav-container {
