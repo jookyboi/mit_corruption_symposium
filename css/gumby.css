@@ -1800,8 +1800,8 @@ body #hero .hero-right .share { display: inline-block; }
 body #hero .hero-right .share .share-email { display: inline-block; width: 26px; height: 20px; background: url("../img/email_icon.png") no-repeat 0 0; background-size: 26px auto; }
 body #hero .hero-right .share .share-twitter { display: inline-block; }
 body .sub-hero { padding: 40px 0; background-color: #e8e6df; text-align: center; }
-body .sub-hero h2 { margin-bottom: 15px; font-size: 22px; font-size: 1.375rem; font-weight: 700; }
 body .sub-hero p { font-size: 22px; font-size: 1.375rem; }
+body .sub-hero p.first-line { font-size: 28px; font-size: 1.75rem; }
 body .sub-content { position: relative; padding: 40px 0; }
 body .sub-content h2 { text-transform: uppercase; text-align: center; font-size: 34px; font-size: 2.125rem; }
 body .sub-content h2.light { color: #777777; }
