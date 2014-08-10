@@ -233,6 +233,27 @@ body {
       position: relative;
       margin-top: 30px;
 
+      .video-link {
+        position: relative;
+
+        .play-button {
+          position: absolute;
+          left: 213px;
+          top: -120px;
+          display: inline-block;
+
+          width: 50px;
+          height: 60px;
+
+          background: url("../img/play_button.png") no-repeat 0 0;
+          opacity: 0.5;
+        }
+
+        &:hover .play-button {
+          opacity: 0.8;
+        }
+      }
+
       img {
         margin-bottom: -7px;
         cursor: pointer;
