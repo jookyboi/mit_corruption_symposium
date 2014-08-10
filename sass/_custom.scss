@@ -204,6 +204,10 @@ body {
     padding: 40px 0;
     background-color: $beige;
     text-align: center;
+    h2{
+      font-size: 1.4rem;
+      font-weight: 700;
+    }
 
     p {
       @include font-size(22px);
