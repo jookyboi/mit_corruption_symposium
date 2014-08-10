@@ -45,7 +45,7 @@ body {
 
   a[href] {
     &:hover {
-      color: $white;
+      color: $black;
     }
 
     &.light {
@@ -421,6 +421,7 @@ body {
 
     #hero {
       text-align: center;
+      padding-top: 20px;
 
       p {
         text-align: center;
@@ -431,11 +432,11 @@ body {
       }
 
       .hero-right {
-        border-left: none;
-        border-top: 1px solid $white_transparent;
-
         padding-left: 0;
         padding-top: 30px;
+
+        border-left: none;
+        border-top: 1px solid $white_transparent;
       }
     }
 
