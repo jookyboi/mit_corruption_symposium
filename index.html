@@ -140,6 +140,57 @@
             $map.css("height", $kresge.height());
         }
 
+
+        var moneyStatIndex = 0,
+                moneyStats = [
+                    {
+                        source: "Agriculture Industry",
+                        figure: "$359 Million"
+                    },
+                    {
+                        source: "Pharmacy Industry",
+                        figure: "$250 Million"
+                    },
+                    {
+                        source: "Automotive Industry",
+                        figure: "$159 Million"
+                    }
+                ];
+
+
+        function nextMoneyStat() {
+            var $moneyScroller = $(".money-scroller"),
+                    $moneySource = $moneyScroller.find(".money-source"),
+                    $moneyFigure = $moneyScroller.find(".money-figure");
+
+            moneyStatIndex++;
+
+            // llop
+            if (moneyStatIndex === moneyStats.length) {
+                moneyStatIndex = 0;
+            }
+
+            $moneySource.animate({
+                opacity: 0
+            }, 250, function() {
+                $moneySource.html(moneyStats[moneyStatIndex].source);
+
+                $moneySource.animate({
+                    opacity: 1.0
+                }, 750);
+            });
+
+            $moneyFigure.animate({
+                opacity: 0
+            }, 750, function() {
+                $moneyFigure.html(moneyStats[moneyStatIndex].figure);
+
+                $moneyFigure.animate({
+                    opacity: 1.0
+                }, 250);
+            });
+        }
+
         $(function() {
             // navigation
             $("nav>a").each(function() {
@@ -172,6 +223,11 @@
             $(".video-link").colorbox(
                     {iframe:true, innerWidth:640, innerHeight:390}
             );
+
+            // money scroller
+            var moneyScrollerInterval = setInterval(function() {
+                nextMoneyStat();
+            }, 3000);
         });
     </script>
 </head>
@@ -207,8 +263,7 @@
                 influence our government
             </p>
             <span class="icon-downwards"></span>
-
-            <p>
+            <p class="money-scroller">
                 <span class="money-source">Agriculture Industry</span>
                 <span class="money-figure">$359 Million</span>
                 <span class="info-source">Source: Center for Responsive Politics, 2012 Lobbying and Contribution Data</span>
@@ -235,8 +290,10 @@
                 change it.</p>
 
             <p>Citizens Rising is a symposium exploring how this corrupted system is used to enhance the leverage of the
-                elite few over the many, and more importantly, it's the chance to ask yourself, “What am I going to do
-                about it?”</p>
+                elite few over the many, and more importantly, it's the chance to ask:</p>
+            <p>
+                <strong>&ldquo;What am I going to do about it?&rdquo;</strong>
+            </p>
         </div>
     </div>
 </section>
