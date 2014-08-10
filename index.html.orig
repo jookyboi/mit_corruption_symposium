@@ -103,19 +103,10 @@
     <![endif]-->
 
     <script src="js/jquery.scrollTo.min.js"></script>
-    <script src="js/jquery.colorbox-min.js"></script>
 
     <!-- Page Script -->
     <script>
-        function syncMapHeight() {
-            var $map = $(".map-embed"),
-                $kresge = $(".kresge-img");
-
-            $map.css("height", $kresge.height());
-        }
-
         $(function() {
-            // navigation
             $("nav>a").each(function() {
                 $(this).click(function(evt) {
                     $.scrollTo(
@@ -134,18 +125,6 @@
                 evt.stopPropagation();
                 evt.preventDefault();
             });
-
-            // resizing
-            $(window).resize(function() {
-                syncMapHeight();
-            });
-
-            syncMapHeight();
-
-            // videos
-            $(".video-link").colorbox(
-                    {iframe:true, innerWidth:640, innerHeight:390}
-            );
         });
     </script>
 </head>
@@ -167,7 +146,7 @@
                 <a href="#location">Location</a>
                 <a href="#sponsors">Sponsors</a>
                 <a href="#aboutus">About Us</a>
-                <a href="https://www.eventbrite.com/e/citizens-rising-a-republic-held-hostage-and-the-plan-to-take-it-back-tickets-12201718669">Register</a>
+                <a href="#">Register</a>
             </nav>
         </div>
     </div>
@@ -191,7 +170,7 @@
         <div class="six columns hero-right">
             <h2>Citizens Rising Conference</h2>
             <span class="date-location">Friday, Sep 19, 2014 - Cambridge, MA</span>
-            <a href="https://www.eventbrite.com/e/citizens-rising-a-republic-held-hostage-and-the-plan-to-take-it-back-tickets-12201718669" class="button">Register</a>
+            <a href="#" class="button">Register</a>
 
             <!--<div class="share">-->
             <!--<a href="#" class="share-email"></a>-->
@@ -224,12 +203,7 @@
     <div class="row">
         <div class="six columns">
             <div class="person">
-                <a href="https:///www.youtube.com/embed/i3X2eDCmPRY?autoplay=1&modestbranding=1" class="video-link">
-                    <span class="play-button"></span>
-                    <img src="img/lessig.png" />
-                    <br/>
-                </a>
-
+                <img src="img/lessig.png"/><br/>
 
                 <div class="quote">We need to take our democracy back.</div>
                 <div class="name">Lawrence Lessig</div>
@@ -255,10 +229,7 @@
         </div>
         <div class="six columns">
             <div class="person">
-                <a href="http://media.mtvnservices.com/embed/mgid:arc:video:thedailyshow.com:0ae7ad4a-9358-4d0c-baca-c195d1c476f5" class="video-link">
-                    <span class="play-button"></span>
-                    <img src="img/gilens.png" /><br/>
-                </a>
+                <img src="img/gilens.png"/><br/>
 
                 <div class="quote">Average citizens have little or no independent influence</div>
                 <div class="name">Martin Gilens</div>
@@ -325,7 +296,7 @@
                     src="https://www.google.com/maps/embed/v1/place?q=Kresge%20Auditorium%2C%20Massachusetts%20Institute%20of%20Technology%2C%20Cambridge%2C%20MA%2002139&key=AIzaSyAsLixWPu4Lb5SZcaQecPoMifP4HFTM-Oo"></iframe>
         </div>
         <div class="six columns">
-            <img class="kresge-img" alt="Kresge Auditorium" src="img/kresge.jpg"/>
+            <img alt="Kresge Auditorium" src="img/kresge.png"/>
         </div>
     </div>
 </section>
@@ -334,7 +305,7 @@
     <div class="row">
         <div class="twelve columns">
             <h3>Join the movement</h3>
-            <a href="https://www.eventbrite.com/e/citizens-rising-a-republic-held-hostage-and-the-plan-to-take-it-back-tickets-12201718669" class="button">Register Now</a>
+            <a href="#" class="button">Register Now</a>
         </div>
     </div>
 </section>
@@ -344,6 +315,14 @@
         <div class="twelve columns">
             <h2 id="sponsors">Sponsors</h2>
             <ul>
+<<<<<<< HEAD
+              <li><a href="https://represent.us/"><img alt="Represent.Us" src="img/RU_Logo_Color.png"></a></li>
+               <li><a href="http://www.commoncause.org/states/massachusetts/"><img alt="Common Cause" src="img/commoncausema.png"></a></li>
+               <li><a href="http://www.wolf-pac.com/massachusetts"><img alt="Wolf PAC Massachusetts" src="img/wolfpac.png"></a></li>
+               <li><a href="https://movetoamend.org/"><img alt="Move to Amend" src="img/move2amend.jpg"></a></li>
+               <li><a href="http://www.democracymatters.org/"><img alt="Democracy Matters" src="img/democracymatters.png"></a></li>
+           </ul>
+=======
                 <li><a href="https://represent.us/" target="_blank"><img alt="Represent.Us"
                                                                          src="img/sponsors/represent_us.png"></a></li>
                 <li><a href="http://www.commoncause.org/states/massachusetts/" target="_blank"><img alt="Common Cause"
@@ -355,10 +334,11 @@
                 <li><a href="https://movetoamend.org/" target="_blank"><img alt="Move to Amend"
                                                                             src="img/sponsors/move2amend.png"></a></li>
                 <li><a href="http://www.democracymatters.org/" target="_blank"><img alt="Democracy Matters"
-                                                                                    src="img/sponsors/democracy_matters.jpg"></a>
+                                                                                    src="img/sponsors/democracy_matters.png"></a>
                 </li>
             </ul>
         </div>
+>>>>>>> 804e7b5c998ff71a1071fb74f3dff56436408b63
     </div>
 </section>
 
@@ -370,7 +350,7 @@
     </div>
     <div class="row">
         <div class="volunteer-container push_two two columns">
-            <a href="https://docs.google.com/forms/d/13iac2LWdHSdDJpVb5FTVpAVs1tKFaEZSSK8VQ5YrvOk/viewform" class="button button-volunteer">Volunteer</a>
+            <a href="#" class="button button-volunteer">Volunteer</a>
         </div>
         <div class="six columns">
             <p>This event is being sponsored by the MIT effective altruism student group,
