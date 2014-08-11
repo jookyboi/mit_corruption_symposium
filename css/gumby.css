@@ -1769,13 +1769,14 @@ table.rounded thead th, table.rounded thead td, table.rounded caption + tbody tr
 .icon-downwards { width: 20px; height: 23px; display: inline-block; margin-bottom: 10px; background: url("../img/downwards.png") no-repeat 0 0; }
 
 .button { display: inline-block; padding: 10px 18px; background-color: #bb4836; color: white; font-weight: 700; border-radius: 5px; transition: background-color 0.1s; text-transform: uppercase; }
-.button:hover { background-color: #892212; color: white; }
+.button:hover { background-color: #892212; color: white !important; }
 
 body { font-family: 'Open Sans', Arial, sans-serif; }
 body a[href]:hover { color: #240905; }
 body a[href].light { color: #f39385; }
 body a[href].light:hover { color: #240905; }
 body a[href].light:active { color: white; }
+body a[href].reverse:hover { color: white; }
 body > header { width: 100%; position: fixed; top: 0; z-index: 100; padding: 15px 0; color: white; background-color: #892212; box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5); }
 body > header .logo { font-size: 20px; font-weight: 700; }
 body > header .logo > a { color: white; }
@@ -1794,11 +1795,12 @@ body #hero .hero-left .money-figure { margin: 10px 0; display: block; text-trans
 body #hero .hero-left .info-source { display: block; margin-top: 30px; font-size: 10px; font-size: 0.625rem; color: #777777; }
 body #hero .hero-right { margin-top: 40px; padding-left: 30px; padding-top: 20px; border-left: 1px solid rgba(255, 255, 255, 0.5); }
 body #hero .hero-right > h2 { font-size: 40px; font-size: 2.5rem; color: white; font-weight: 600; }
-body #hero .hero-right .date-location { display: block; margin-bottom: 20px; }
+body #hero .hero-right s.date-location { display: block; margin-bottom: 20px; }
 body #hero .hero-right .button { padding: 10px 25px; }
-body #hero .hero-right .share { display: inline-block; }
-body #hero .hero-right .share .share-email { display: inline-block; width: 26px; height: 20px; background: url("../img/email_icon.png") no-repeat 0 0; background-size: 26px auto; }
-body #hero .hero-right .share .share-twitter { display: inline-block; }
+body #hero .hero-right .share { display: inline; }
+body #hero .hero-right .share > a { display: inline-block; margin-right: 5px; }
+body #hero .hero-right .share .share-email { width: 31px; height: 20px; background: url("../img/email_icon.png") no-repeat 0 0; }
+body #hero .hero-right .share .share-twitter { width: 25px; height: 20px; background: url("../img/twitter_icon.png") no-repeat 0 0; }
 body .sub-hero { padding: 40px 0; background-color: #e8e6df; text-align: center; }
 body .sub-hero p { font-size: 22px; font-size: 1.375rem; }
 body .sub-hero p.first-line { font-size: 28px; font-size: 1.75rem; }
@@ -1843,4 +1845,5 @@ body .aboutus abbr { text-transform: uppercase; font-size: 90%; color: white; bo
   body #hero .hero-right { padding-left: 0; padding-top: 30px; border-left: none; border-top: 1px solid rgba(255, 255, 255, 0.5); }
   body .sub-hero p { text-align: center; }
   body .sponsors ul { text-align: center; }
-  body .aboutus .volunteer-container { text-align: center; margin-bottom: 20px; } }
+  body .aboutus .volunteer-container { text-align: center; margin-bottom: 20px; }
+  body .aboutus a:hover { color: white !important; } }

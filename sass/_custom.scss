@@ -36,7 +36,7 @@ $beige: #E8E6DF;
 
   &:hover {
     background-color: $dark_red;
-    color: $white;
+    color: $white !important;
   }
 }
 
@@ -60,6 +60,10 @@ body {
         color: $white;
       }
     }
+
+    &.reverse:hover {
+      color: $white;
+    }
   }
 
   > header {
@@ -78,7 +82,7 @@ body {
       font-size: 20px;
       font-weight: 700;
 
-      >a {
+      > a {
         color: $white;
       }
     }
@@ -172,7 +176,7 @@ body {
         font-weight: 600;
       }
 
-      .date-location {
+      s.date-location {
         display: block;
         margin-bottom: 20px;
       }
@@ -182,19 +186,25 @@ body {
       }
 
       .share {
-        display: inline-block;
+        display: inline;
+
+        > a {
+          display: inline-block;
+          margin-right: 5px;
+        }
 
         .share-email {
-          display: inline-block;
-          width: 26px;
+          width: 31px;
           height: 20px;
 
           background: url('../img/email_icon.png') no-repeat 0 0;
-          background-size: 26px auto;
         }
 
         .share-twitter {
-          display: inline-block;
+          width: 25px;
+          height: 20px;
+
+          background: url('../img/twitter_icon.png') no-repeat 0 0;
         }
       }
     }
@@ -296,7 +306,7 @@ body {
       .bio {
         padding: 10px;
 
-        >p {
+        > p {
           @include font-size(14px);
         }
       }
@@ -373,7 +383,7 @@ body {
       margin: 20px 0 0 0;
       padding: 0;
 
-      >li {
+      > li {
         display: inline-block;
         margin-right: 40px;
 
@@ -416,7 +426,7 @@ body {
 // responsive layouts
 @include respond(all-phones) {
   body {
-    >header .nav-container {
+    > header .nav-container {
       display: none;
     }
 
@@ -457,6 +467,10 @@ body {
       .volunteer-container {
         text-align: center;
         margin-bottom: 20px;
+      }
+
+      a:hover {
+        color: $white !important;
       }
     }
   }
