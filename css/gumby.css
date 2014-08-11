@@ -1777,10 +1777,10 @@ body a[href].light { color: #f39385; }
 body a[href].light:hover { color: #240905; }
 body a[href].light:active { color: white; }
 body a[href].reverse:hover { color: white; }
-body > header { width: 100%; position: fixed; top: 0; z-index: 100; padding: 15px 0; color: white; background-color: #892212; box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5); }
+body > header { width: 100%; position: fixed; top: 0; z-index: 100; padding: 7px 0 0 0; color: white; background-color: #892212; box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5); }
 body > header .logo { font-size: 20px; font-weight: 700; }
 body > header .logo > a { color: white; }
-body > header .nav-container { text-align: right; }
+body > header .nav-container { text-align: right; margin-top: 7px; }
 body > header .nav-container > nav { display: inline-block; text-transform: uppercase; }
 body > header .nav-container > nav > a { display: inline-block; margin-left: 25px; color: white; font-weight: 700; font-size: 14px; font-size: 0.875rem; transition: color 0.1s; }
 body > header .nav-container > nav > a:first-child { margin: 0; }
