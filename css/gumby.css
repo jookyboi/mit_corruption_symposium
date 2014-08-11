@@ -1793,14 +1793,16 @@ body #hero .hero-left p { font-weight: 700; }
 body #hero .hero-left .money-source { display: block; text-transform: uppercase; }
 body #hero .hero-left .money-figure { margin: 10px 0; display: block; text-transform: uppercase; color: #bb4836; font-size: 40px; font-size: 2.5rem; }
 body #hero .hero-left .info-source { display: block; margin-top: 30px; font-size: 10px; font-size: 0.625rem; color: #777777; }
-body #hero .hero-right { margin-top: 40px; padding-left: 30px; padding-top: 20px; border-left: 1px solid rgba(255, 255, 255, 0.5); }
+body #hero .hero-right { position: relative; margin-top: 40px; padding-left: 30px; padding-top: 20px; border-left: 1px solid rgba(255, 255, 255, 0.5); }
 body #hero .hero-right > h2 { font-size: 40px; font-size: 2.5rem; color: white; font-weight: 600; }
 body #hero .hero-right .date-location { display: block; margin-bottom: 20px; }
 body #hero .hero-right .button { padding: 10px 25px; }
-body #hero .hero-right .share { display: inline; }
-body #hero .hero-right .share > a { display: inline-block; margin-right: 5px; }
+body #hero .hero-right .share { position: absolute; bottom: 7px; left: 160px; display: inline; margin-left: 20px; }
+body #hero .hero-right .share > a { display: inline-block; margin-top: 5px; margin-right: 10px; opacity: 0.8; }
+body #hero .hero-right .share > a:hover { opacity: 1.0; }
 body #hero .hero-right .share .share-email { width: 31px; height: 20px; background: url("../img/email_icon.png") no-repeat 0 0; }
 body #hero .hero-right .share .share-twitter { width: 25px; height: 20px; background: url("../img/twitter_icon.png") no-repeat 0 0; }
+body #hero .hero-right .share .share-facebook { width: 20px; height: 20px; background: url("../img/facebook_icon.png") no-repeat 0 0; }
 body .sub-hero { padding: 40px 0; background-color: #e8e6df; text-align: center; }
 body .sub-hero p { font-size: 22px; font-size: 1.375rem; }
 body .sub-hero p.first-line { font-size: 28px; font-size: 1.75rem; }
