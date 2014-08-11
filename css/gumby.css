@@ -1786,7 +1786,7 @@ body > header .nav-container > nav > a { display: inline-block; margin-left: 25p
 body > header .nav-container > nav > a:first-child { margin: 0; }
 body > header .nav-container > nav > a:last-child { color: #FFFC19; }
 body > header .nav-container > nav > a:hover { color: #240905; }
-body #hero { padding: 50px inherit; color: white; background: #240905 url("../img/hero_banner.jpg"); background-size: cover; }
+body #hero { padding: 50px inherit; padding-top: 80px; color: white; background: #240905 url("../img/hero_banner.jpg"); background-size: cover; }
 body #hero em { font-style: normal; color: #bb4836; }
 body #hero .hero-left { margin-top: 50px; text-align: center; }
 body #hero .hero-left p { font-weight: 700; }
