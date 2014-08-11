@@ -236,6 +236,10 @@ body {
     background-color: $beige;
     text-align: center;
 
+    h2 {
+      margin-bottom: 30px;
+    }
+
     p {
       @include font-size(22px);
 
