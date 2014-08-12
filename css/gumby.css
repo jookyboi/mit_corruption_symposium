@@ -1792,7 +1792,7 @@ body #hero .hero-left { margin-top: 50px; text-align: center; }
 body #hero .hero-left p { font-weight: 700; }
 body #hero .hero-left .money-source { display: block; text-transform: uppercase; }
 body #hero .hero-left .money-figure { margin: 10px 0; display: block; text-transform: uppercase; color: #bb4836; font-size: 40px; font-size: 2.5rem; }
-body #hero .hero-left .info-source { display: block; margin-top: 30px; font-size: 10px; font-size: 0.625rem; color: #777777; }
+body #hero .hero-left .info-source { display: block; margin-top: 30px; font-size: 10px; font-size: 0.625rem; color: #777777; line-height: 1rem; }
 body #hero .hero-right { margin-top: 40px; padding-left: 30px; padding-top: 20px; border-left: 1px solid rgba(255, 255, 255, 0.5); }
 body #hero .hero-right > h2 { font-size: 40px; font-size: 2.5rem; color: white; font-weight: 600; }
 body #hero .hero-right .date-location { display: block; margin-bottom: 20px; }
@@ -1838,6 +1838,8 @@ body .sponsors ul > li:last-child { margin: 0; }
 body .sponsors ul > li img { height: 50px; }
 body .aboutus { background-color: #240905; }
 body .aboutus h2 { margin-bottom: 20px; }
+body .aboutus .logo { display: block; margin: auto; margin-bottom: 10px; width: 100%; }
+body .aboutus .button-volunteer { display: block; margin: auto; text-align: center; padding-left: 24px; }
 body .aboutus p { color: white; }
 body .aboutus abbr { text-transform: uppercase; font-size: 90%; color: white; border-bottom: none; cursor: help; }
 
@@ -1847,6 +1849,7 @@ body .aboutus abbr { text-transform: uppercase; font-size: 90%; color: white; bo
   body #hero .hero-left { padding-top: 30px; }
   body #hero .hero-right { padding-left: 0; padding-top: 30px; border-left: none; border-top: 1px solid rgba(255, 255, 255, 0.5); }
   body .sub-hero p { text-align: center; }
+  body .sub-hero .money-figure { font-size: 40px; font-size: 2.5rem; }
   body .sponsors ul { text-align: center; }
   body .aboutus .volunteer-container { text-align: center; margin-bottom: 20px; }
   body .aboutus a:hover { color: white !important; } }
