@@ -1791,7 +1791,7 @@ body #hero em { font-style: normal; color: #bb4836; }
 body #hero .hero-left { margin-top: 50px; text-align: center; }
 body #hero .hero-left p { font-weight: 700; }
 body #hero .hero-left .money-source { display: block; text-transform: uppercase; }
-body #hero .hero-left .money-figure { margin: 10px 0; display: block; text-transform: uppercase; color: #bb4836; font-size: 40px; font-size: 2.5rem; }
+body #hero .hero-left .money-figure { margin: 10px 0; display: block; text-transform: uppercase; color: #bb4836; font-size: 34px; font-size: 2.125rem; }
 body #hero .hero-left .info-source { display: block; margin-top: 30px; font-size: 10px; font-size: 0.625rem; color: #777777; line-height: 1rem; }
 body #hero .hero-right { margin-top: 40px; padding-left: 30px; padding-top: 20px; border-left: 1px solid rgba(255, 255, 255, 0.5); }
 body #hero .hero-right > h2 { font-size: 40px; font-size: 2.5rem; color: white; font-weight: 600; }
