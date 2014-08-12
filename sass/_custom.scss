@@ -155,6 +155,7 @@ body {
 
         color: $red;
         @include font-size(40px);
+
       }
 
       .info-source {
@@ -164,6 +165,8 @@ body {
         @include font-size(10px);
 
         color: $dark_gray;
+
+        line-height:1rem;
       }
     }
 
@@ -430,6 +433,20 @@ body {
     h2 {
       margin-bottom: 20px;
     }
+    
+    .logo{
+          display:block;
+          margin: auto;
+          margin-bottom:10px;
+          width:100%;
+    }
+
+    .button-volunteer{
+      display:block;
+      margin: auto;
+      text-align:center;
+      padding-left:24px;
+    }
 
     p {
       color: $white;
@@ -478,6 +495,9 @@ body {
       p {
         text-align: center;
       }
+      .money-figure{
+        @include font-size(40px);
+      }
     }
 
     .sponsors {
@@ -490,7 +510,10 @@ body {
       .volunteer-container {
         text-align: center;
         margin-bottom: 20px;
+
       }
+
+      
 
       a:hover {
         color: $white !important;
