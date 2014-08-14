@@ -352,9 +352,54 @@ body {
       }
     }
 
-    .demphasized {
-      font-size: 1rem;
-      color: $light_gray;
+    ul {
+      margin: 30px 0 0 0;
+      padding: 0;
+
+      li {
+        position: relative;
+        margin-bottom: 30px;
+        background: url("../img/period_circle.png") no-repeat 120px 3px;
+
+        .period-time {
+          position: absolute;
+          top: 3px;
+          left: 0;
+
+          color: $red;
+          font-weight: bold;
+        }
+
+        .period-details {
+          display: inline-block;
+          margin-left: 163px;
+
+          h3 {
+            @include font-size(20px);
+            font-weight: $font-weight-bold;
+            color: $white;
+          }
+
+          .period-speaker {
+            margin-top: 8px;
+          }
+
+          .period-speaker-title {
+            color: $dark_gray;
+          }
+        }
+
+        .period-tail {
+          position: absolute;
+          left: 133px;
+          top: 38px;
+
+          background: $red;
+
+          width: 4px;
+          height: calc(100% - 10px);
+        }
+      }
     }
   }
 
