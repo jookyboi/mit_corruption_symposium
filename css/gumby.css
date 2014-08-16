@@ -1829,7 +1829,9 @@ body .schedule ul li .period-time { position: absolute; top: 3px; left: 0; color
 body .schedule ul li .period-details { display: inline-block; margin-left: 163px; }
 body .schedule ul li .period-details h3 { font-size: 20px; font-size: 1.25rem; font-weight: 700; color: white; }
 body .schedule ul li .period-details .period-speaker { margin-top: 8px; }
-body .schedule ul li .period-details .period-speaker-title { color: #777777; }
+body .schedule ul li .period-details .period-tweet { padding-left: 25px; background: url("../img/twitter_icon.png") no-repeat 0 50%; background-size: 20px 16px; }
+body .schedule ul li .period-details .period-speaker-title, body .schedule ul li .period-details .period-speaker-tbd { color: #777777; }
+body .schedule ul li .period-details .period-speaker-tbd { margin-top: 10px; }
 body .schedule ul li .period-tail { position: absolute; left: 133px; top: 38px; background: #bb4836; width: 4px; height: calc(100% - 10px); }
 body .join-now { height: 330px; background: #240905 url("../img/light_brigade.jpg"); background-size: cover; text-align: center; text-align: center; }
 body .join-now h2 { margin-top: 58px; color: white; }

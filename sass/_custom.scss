@@ -384,8 +384,18 @@ body {
             margin-top: 8px;
           }
 
-          .period-speaker-title {
+          .period-tweet {
+            padding-left: 25px;
+            background: url('../img/twitter_icon.png') no-repeat 0 50%;
+            background-size: 20px 16px;
+          }
+
+          .period-speaker-title, .period-speaker-tbd {
             color: $dark_gray;
+          }
+
+          .period-speaker-tbd {
+            margin-top: 10px;
           }
         }
 
