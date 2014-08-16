@@ -26,7 +26,7 @@
 <!-- Facebook Metadata /-->
 <meta property="og:image" content="http://www.citizensrising.us/img/fb_logo.png">
 <meta property="og:description"
-      content="Join me on Friday, Sept 19, 2014 at the MIT Kresge Auditorium in Cambridge, MA. Citizens Rising is a symposium exploring how the US political system is used to enhance the leverage of the elite few over the many.">
+      content="The US government is broken. Let's fix it. Join Martin Gilens and Lawrence Lessig at the MIT Anti-corruption Symposium on Fri, Sep 19! www.citizensrising.us">
 <meta property="og:title" content="Citizens Rising Symposium - Fri, Sept 19">
 <meta property="og:type" content="website">
 <meta property="og:url" content="http://www.citizensrising.us">
@@ -34,7 +34,7 @@
 <!-- Google+ Metadata /-->
 <meta itemprop="name" content="Citizens Rising Symposium">
 <meta itemprop="description"
-      content="Join me on Friday, Sept 19, 2014 at the MIT Kresge Auditorium in Cambridge, MA. Citizens Rising is a symposium exploring how the US political system is used to enhance the leverage of the elite few over the many.">
+      content="The US government is broken. Let's fix it. Join Martin Gilens and Lawrence Lessig at the MIT Anti-corruption Symposium on Fri, Sep 19! www.citizensrising.us">
 <meta itemprop="image" content="img/favicon.jpg">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
@@ -244,6 +244,18 @@ Or concatenate and minify into a single file -->
             evt.preventDefault();
         });
 
+        // facebook share
+        $(".share-facebook").click(function(evt) {
+            FB.ui(
+            {
+                method: 'share',
+                href: 'http://www.citizensrising.us'
+            }, function(response){});
+
+            evt.stopPropagation();
+            evt.preventDefault();
+        });
+
         // resizing
         $(window).resize(function() {
             syncMapHeight();
@@ -267,6 +279,16 @@ Or concatenate and minify into a single file -->
 </head>
 
 <body>
+
+<!-- Facebook API -->
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&appId=451106311628952&version=v2.0";
+    fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
 
 <header>
     <div class="row">
@@ -316,7 +338,7 @@ Or concatenate and minify into a single file -->
                    class="share-email" target="_blank"></a>
                 <a href="https://twitter.com/intent/tweet?original_referer=http%3A%2F%2Fwww.gistboxapp.com%2F&text=The+US+gov't+is+broken.+Let's+fix it.+Join+@lessig,+@MartinGilens+and+me+at+MIT+on+Fri,+Sep+19!+www.citizensrising.us+via+@Citizens_Rising"
                    class="share-twitter" target="_blank"></a>
-                <a href="https://www.facebook.com/citizensrisingsymposium" class="share-facebook" target="_blank"></a>
+                <a href="#" class="share-facebook" target="_blank"></a>
             </div>
         </div>
     </div>
