@@ -12,255 +12,258 @@
 <!--[if gt IE 9]><!-->
 <html class="no-js" lang="en" itemscope="" itemtype="http://schema.org/Product"> <!--<![endif]-->
 <head>
-    <meta charset="utf-8">
+<meta charset="utf-8">
 
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-    <title>MIT Anti-corruption Symposium</title>
-    <meta name="description" content="Citizens Rising Symposium - Friday, Sept 19, 2014 - MIT Kresge Auditorium">
-    <meta name="keywords" content="campaign,finance,politics,lobbying,industry">
-    <meta name="author" content="humans.txt">
+<title>MIT Anti-corruption Symposium</title>
+<meta name="description" content="Citizens Rising Symposium - Friday, Sept 19, 2014 - MIT Kresge Auditorium">
+<meta name="keywords" content="campaign,finance,politics,lobbying,industry">
+<meta name="author" content="humans.txt">
 
-    <link rel="shortcut icon" href="img/favicon.jpg" type="image/x-icon">
+<link rel="shortcut icon" href="img/favicon.jpg" type="image/x-icon">
 
-    <!-- Facebook Metadata /-->
-    <meta property="og:image" content="http://www.citizensrising.us/img/fb_logo.png">
-    <meta property="og:description" content="Join me on Friday, Sept 19, 2014 at the MIT Kresge Auditorium in Cambridge, MA. Citizens Rising is a symposium exploring how the US political system is used to enhance the leverage of the elite few over the many.">
-    <meta property="og:title" content="Citizens Rising Symposium - Fri, Sept 19">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="http://www.citizensrising.us">
+<!-- Facebook Metadata /-->
+<meta property="og:image" content="http://www.citizensrising.us/img/fb_logo.png">
+<meta property="og:description"
+      content="Join me on Friday, Sept 19, 2014 at the MIT Kresge Auditorium in Cambridge, MA. Citizens Rising is a symposium exploring how the US political system is used to enhance the leverage of the elite few over the many.">
+<meta property="og:title" content="Citizens Rising Symposium - Fri, Sept 19">
+<meta property="og:type" content="website">
+<meta property="og:url" content="http://www.citizensrising.us">
 
-    <!-- Google+ Metadata /-->
-    <meta itemprop="name" content="Citizens Rising Symposium">
-    <meta itemprop="description" content="Join me on Friday, Sept 19, 2014 at the MIT Kresge Auditorium in Cambridge, MA. Citizens Rising is a symposium exploring how the US political system is used to enhance the leverage of the elite few over the many.">
-    <meta itemprop="image" content="img/favicon.jpg">
+<!-- Google+ Metadata /-->
+<meta itemprop="name" content="Citizens Rising Symposium">
+<meta itemprop="description"
+      content="Join me on Friday, Sept 19, 2014 at the MIT Kresge Auditorium in Cambridge, MA. Citizens Rising is a symposium exploring how the US political system is used to enhance the leverage of the elite few over the many.">
+<meta itemprop="image" content="img/favicon.jpg">
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
 
-    <!-- We highly recommend you use SASS and write your custom styles in sass/_custom.scss.
-         However, there is a blank style.css in the css directory should you prefer -->
-    <link rel="stylesheet" href="css/gumby.css">
-    <!-- <link rel="stylesheet" href="css/style.css"> -->
+<!-- We highly recommend you use SASS and write your custom styles in sass/_custom.scss.
+     However, there is a blank style.css in the css directory should you prefer -->
+<link rel="stylesheet" href="css/gumby.css">
+<!-- <link rel="stylesheet" href="css/style.css"> -->
 
-    <script src="bower_components/gumby/js/libs/modernizr-2.6.2.min.js"></script>
+<script src="bower_components/gumby/js/libs/modernizr-2.6.2.min.js"></script>
 
-    <!-- Google Web Fonts -->
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800,300' rel='stylesheet' type='text/css'>
+<!-- Google Web Fonts -->
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800,300' rel='stylesheet' type='text/css'>
 
-    <!-- Grab Google CDN's jQuery, fall back to local if offline -->
-    <!-- 2.0 for modern browsers, 1.10 for .oldie -->
-    <script>
-        var oldieCheck = Boolean(document.getElementsByTagName('html')[0].className.match(/\soldie\s/g));
+<!-- Grab Google CDN's jQuery, fall back to local if offline -->
+<!-- 2.0 for modern browsers, 1.10 for .oldie -->
+<script>
+    var oldieCheck = Boolean(document.getElementsByTagName('html')[0].className.match(/\soldie\s/g));
+    if (!oldieCheck) {
+        document.write('<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"><\/script>');
+    } else {
+        document.write('<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"><\/script>');
+    }
+</script>
+<script>
+    if (!window.jQuery) {
         if (!oldieCheck) {
-            document.write('<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"><\/script>');
+            document.write('<script src="bower_components/gumby/js/libs/jquery-2.0.2.min.js"><\/script>');
         } else {
-            document.write('<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"><\/script>');
+            document.write('<script src="bower_components/gumby/js/libs/jquery-1.10.1.min.js"><\/script>');
         }
-    </script>
-    <script>
-        if (!window.jQuery) {
-            if (!oldieCheck) {
-                document.write('<script src="bower_components/gumby/js/libs/jquery-2.0.2.min.js"><\/script>');
-            } else {
-                document.write('<script src="bower_components/gumby/js/libs/jquery-1.10.1.min.js"><\/script>');
-            }
-        }
-    </script>
+    }
+</script>
 
-    <!--
-    Include gumby.js followed by UI modules followed by gumby.init.js
-    Or concatenate and minify into a single file -->
-    <script gumby-touch="js/libs" src="js/gumby.min.js"></script>
+<!--
+Include gumby.js followed by UI modules followed by gumby.init.js
+Or concatenate and minify into a single file -->
+<script gumby-touch="js/libs" src="js/gumby.min.js"></script>
 
-    <script src="bower_components/gumby/js/plugins.js"></script>
-    <script src="bower_components/gumby/js/main.js"></script>
+<script src="bower_components/gumby/js/plugins.js"></script>
+<script src="bower_components/gumby/js/main.js"></script>
 
-    <script src="bower_components/gumby-parallax/gumby.parallax.js"></script>
+<script src="bower_components/gumby-parallax/gumby.parallax.js"></script>
 
-    <script>
-        (function(i, s, o, g, r, a, m) {
-            i['GoogleAnalyticsObject'] = r;
-            i[r] = i[r] || function() {
-                (i[r].q = i[r].q || []).push(arguments)
-            }, i[r].l = 1 * new Date();
-            a = s.createElement(o),
-                    m = s.getElementsByTagName(o)[0];
-            a.async = 1;
-            a.src = g;
-            m.parentNode.insertBefore(a, m)
-        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+<script>
+    (function(i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function() {
+            (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date();
+        a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
 
-        ga('create', 'UA-53578505-1', 'auto');
-        ga('send', 'pageview');
-    </script>
+    ga('create', 'UA-53578505-1', 'auto');
+    ga('send', 'pageview');
+</script>
 
-    <!-- Prompt IE 6 users to install Chrome Frame. Remove this if you want to support IE 6.
-       chromium.org/developers/how-tos/chrome-frame-getting-started -->
-    <!--[if lt IE 7 ]>
-    <script src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.3/CFInstall.min.js"></script>
-    <script>window.attachEvent('onload', function() {
-        CFInstall.check({mode: 'overlay'})
-    })</script>
-    <![endif]-->
+<!-- Prompt IE 6 users to install Chrome Frame. Remove this if you want to support IE 6.
+   chromium.org/developers/how-tos/chrome-frame-getting-started -->
+<!--[if lt IE 7 ]>
+<script src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.3/CFInstall.min.js"></script>
+<script>window.attachEvent('onload', function() {
+    CFInstall.check({mode: 'overlay'})
+})</script>
+<![endif]-->
 
-    <script src="js/jquery.scrollTo.min.js"></script>
-    <script src="js/jquery.colorbox-min.js"></script>
+<script src="js/jquery.scrollTo.min.js"></script>
+<script src="js/jquery.colorbox-min.js"></script>
 
-    <!-- Page Script -->
-    <script>
-        function syncMapHeight() {
-            var $map = $(".map-embed"),
+<!-- Page Script -->
+<script>
+    function syncMapHeight() {
+        var $map = $(".map-embed"),
                 $kresge = $(".kresge-img");
 
-            $map.css("height", $kresge.height());
+        $map.css("height", $kresge.height());
+    }
+
+    var moneyStatIndex = 0,
+            moneyStats = [
+                {
+                    source: "Pharmaceutical Industry",
+                    figure: "$525 Million"
+                },
+                {
+                    source: "Defense Industry",
+                    figure: "$301 Million"
+                },
+                {
+                    source: "Lobbying &amp; Legal Industry",
+                    figure: "$275 Million"
+                },
+                {
+                    source: "Mortgage Industry",
+                    figure: "$33 Million"
+                },
+                {
+                    source: "Oil &amp; Gas Industry",
+                    figure: "$363 Million"
+                },
+                {
+                    source: "Private Prison Industry",
+                    figure: "$4 Million"
+                },
+                {
+                    source: "Construction Industry",
+                    figure: "$224 Million"
+                },
+                {
+                    source: "Labor",
+                    figure: "$240 Million"
+                },
+                {
+                    source: "Transportation Industry",
+                    figure: "$561 Million"
+                },
+                {
+                    source: "Finance Industry",
+                    figure: "$1640 Million"
+                },
+                {
+                    source: "Investment Industry",
+                    figure: "$485 Million"
+                },
+                {
+                    source: "Communications Industry",
+                    figure: "$987 Million"
+                },
+                {
+                    source: "Insurance Industry",
+                    figure: "$367 Million"
+                },
+                {
+                    source: "Healthcare Industry",
+                    figure: "$1260 Million"
+                },
+                {
+                    source: "Gun Rights",
+                    figure: "$15 Million"
+                },
+                {
+                    source: "Mining Industry",
+                    figure: "$85 Million"
+                },
+                {
+                    source: "Education Industry",
+                    figure: "$266 Million"
+                }
+            ];
+
+
+    function nextMoneyStat() {
+        var $moneyScroller = $(".money-scroller"),
+                $moneySource = $moneyScroller.find(".money-source"),
+                $moneyFigure = $moneyScroller.find(".money-figure");
+
+        moneyStatIndex++;
+
+        // loop
+        if (moneyStatIndex === moneyStats.length) {
+            moneyStatIndex = 0;
         }
 
-        var moneyStatIndex = 0,
-                moneyStats = [
-                    {
-                        source: "Pharmaceutical Industry",
-                        figure: "$525 Million"
-                    },
-                    {
-                        source: "Defense Industry",
-                        figure: "$301 Million"
-                    },
-                    {
-                        source: "Lobbying &amp; Legal Industry",
-                        figure: "$275 Million"
-                    }, {
-                        source: "Mortgage Industry",
-                        figure: "$33 Million"
-                    },
-                    {
-                        source: "Oil &amp; Gas Industry",
-                        figure: "$363 Million"
-                    },
-                    {
-                        source: "Private Prison Industry",
-                        figure: "$4 Million"
-                    },
-                    {
-                        source: "Construction Industry",
-                        figure: "$224 Million"
-                    },
-                    {
-                        source: "Labor",
-                        figure: "$240 Million"
-                    },
-                    {
-                        source: "Transportation Industry",
-                        figure: "$561 Million"
-                    },
-                    {
-                        source: "Finance Industry",
-                        figure: "$1640 Million"
-                    },
-                    {
-                        source: "Investment Industry",
-                        figure: "$485 Million"
-                    },
-                    {
-                        source: "Communications Industry",
-                        figure: "$987 Million"
-                    },
-                    {
-                        source: "Insurance Industry",
-                        figure: "$367 Million"
-                    },
-                    {
-                        source: "Healthcare Industry",
-                        figure: "$1260 Million"
-                    },
-                    {
-                        source: "Gun Rights",
-                        figure: "$15 Million"
-                    },
-                    {
-                        source: "Mining Industry",
-                        figure: "$85 Million"
-                    },
-                    {
-                        source: "Education Industry",
-                        figure: "$266 Million"
-                    }
-                ];
-
-
-        function nextMoneyStat() {
-            var $moneyScroller = $(".money-scroller"),
-                    $moneySource = $moneyScroller.find(".money-source"),
-                    $moneyFigure = $moneyScroller.find(".money-figure");
-
-            moneyStatIndex++;
-
-            // loop
-            if (moneyStatIndex === moneyStats.length) {
-                moneyStatIndex = 0;
-            }
+        $moneySource.animate({
+            opacity: 0
+        }, 250, function() {
+            $moneySource.html(moneyStats[moneyStatIndex].source);
 
             $moneySource.animate({
-                opacity: 0
-            }, 250, function() {
-                $moneySource.html(moneyStats[moneyStatIndex].source);
+                opacity: 1.0
+            }, 750);
+        });
 
-                $moneySource.animate({
-                    opacity: 1.0
-                }, 750);
-            });
+        $moneyFigure.animate({
+            opacity: 0
+        }, 750, function() {
+            $moneyFigure.html(moneyStats[moneyStatIndex].figure);
 
             $moneyFigure.animate({
-                opacity: 0
-            }, 750, function() {
-                $moneyFigure.html(moneyStats[moneyStatIndex].figure);
+                opacity: 1.0
+            }, 250);
+        });
+    }
 
-                $moneyFigure.animate({
-                    opacity: 1.0
-                }, 250);
-            });
-        }
-
-        $(function() {
-            // navigation
-            $("nav>a").each(function() {
-                $(this).click(function(evt) {
-                    $.scrollTo(
-                            $(this).attr("href"),
-                            500
-                    );
-
-                    evt.stopPropagation();
-                    evt.preventDefault();
-                });
-            });
-
-            $(".logo>a").click(function(evt) {
-                $.scrollTo(0, 500);
+    $(function() {
+        // navigation
+        $("nav>a").each(function() {
+            $(this).click(function(evt) {
+                $.scrollTo(
+                        $(this).attr("href"),
+                        500
+                );
 
                 evt.stopPropagation();
                 evt.preventDefault();
             });
-
-            // resizing
-            $(window).resize(function() {
-                syncMapHeight();
-            });
-
-            $(".kresge-img").load(function() {
-                syncMapHeight();
-            });
-
-            // videos
-            $(".video-link").colorbox(
-                    {iframe:true, innerWidth:640, innerHeight:390}
-            );
-
-            // money scroller
-            var moneyScrollerInterval = setInterval(function() {
-                nextMoneyStat();
-            }, 3000);
         });
-    </script>
+
+        $(".logo>a").click(function(evt) {
+            $.scrollTo(0, 500);
+
+            evt.stopPropagation();
+            evt.preventDefault();
+        });
+
+        // resizing
+        $(window).resize(function() {
+            syncMapHeight();
+        });
+
+        $(".kresge-img").load(function() {
+            syncMapHeight();
+        });
+
+        // videos
+        $(".video-link").colorbox(
+                {iframe: true, innerWidth: 640, innerHeight: 390}
+        );
+
+        // money scroller
+        var moneyScrollerInterval = setInterval(function() {
+            nextMoneyStat();
+        }, 3000);
+    });
+</script>
 </head>
 
 <body>
@@ -269,7 +272,7 @@
     <div class="row">
         <div class="three columns">
             <div class="logo">
-                <a href="#"><img alt="Citizens Rising" src="img/CitizensRisingLogo.png" /></a>
+                <a href="#"><img alt="Citizens Rising" src="img/CitizensRisingLogo.png"/></a>
             </div>
         </div>
 
@@ -280,7 +283,8 @@
                 <a href="#location">Location</a>
                 <a href="#sponsors">Organizations</a>
                 <a href="#aboutus">About Us</a>
-                <a href="https://www.eventbrite.com/e/citizens-rising-a-republic-held-hostage-and-the-plan-to-take-it-back-tickets-12201718669" target="_blank">Register</a>
+                <a href="https://www.eventbrite.com/e/citizens-rising-a-republic-held-hostage-and-the-plan-to-take-it-back-tickets-12201718669"
+                   target="_blank">Register</a>
             </nav>
         </div>
     </div>
@@ -294,6 +298,7 @@
                 influence our government
             </p>
             <span class="icon-downwards"></span>
+
             <p class="money-scroller">
                 <span class="money-source">Pharmaceutical Industry</span>
                 <span class="money-figure">$525 Million</span>
@@ -303,11 +308,14 @@
         <div class="six columns hero-right">
             <h2>Citizens Rising Symposium</h2>
             <span class="date-location">Friday, Sept 19, 2014 - Kresge Auditorium, MIT</span>
-            <a href="https://www.eventbrite.com/e/citizens-rising-a-republic-held-hostage-and-the-plan-to-take-it-back-tickets-12201718669" class="button" target="_blank">Register</a>
+            <a href="https://www.eventbrite.com/e/citizens-rising-a-republic-held-hostage-and-the-plan-to-take-it-back-tickets-12201718669"
+               class="button" target="_blank">Register</a>
 
             <div class="share">
-                <a href="mailto:?subject=Citizens Rising Symposium - Fri, Sept 19&body=Citizens Rising: A Republic Held Hostage and the Plan to Take It Back%0D%0A%0D%0AThe US political system is broken. Our governance has been bought and sold. We all know this, but you can change it.%0D%0A%0D%0ACitizens Rising is a symposium exploring how this corrupted system is used to enhance the leverage of the elite few over the many, and more importantly, it’s the chance to ask:%0D%0A%0D%0A%22What am I going to do about it?%22%0D%0A%0D%0AJoin me, along with speakers Lawrence Lessig (Harvard) and Martin Gilens (Princeton), at the MIT Kresge Auditorium on Friday, September 19th. And let's take our Republic back!%0D%0A%0D%0ALearn more and register for this free event at http://www.citizensrising.us/" class="share-email" target="_blank"></a>
-                <a href="https://twitter.com/intent/tweet?original_referer=http%3A%2F%2Fwww.gistboxapp.com%2F&text=The+US+gov't+is+broken.+Let's+fix it.+Join+@lessig,+@MartinGilens+and+me+at+MIT+on+Fri,+Sep+19!+www.citizensrising.us+via+@Citizens_Rising" class="share-twitter" target="_blank"></a>
+                <a href="mailto:?subject=Citizens Rising Symposium - Fri, Sept 19&body=Citizens Rising: A Republic Held Hostage and the Plan to Take It Back%0D%0A%0D%0AThe US political system is broken. Our governance has been bought and sold. We all know this, but you can change it.%0D%0A%0D%0ACitizens Rising is a symposium exploring how this corrupted system is used to enhance the leverage of the elite few over the many, and more importantly, it’s the chance to ask:%0D%0A%0D%0A%22What am I going to do about it?%22%0D%0A%0D%0AJoin me, along with speakers Lawrence Lessig (Harvard) and Martin Gilens (Princeton), at the MIT Kresge Auditorium on Friday, September 19th. And let's take our Republic back!%0D%0A%0D%0ALearn more and register for this free event at http://www.citizensrising.us/"
+                   class="share-email" target="_blank"></a>
+                <a href="https://twitter.com/intent/tweet?original_referer=http%3A%2F%2Fwww.gistboxapp.com%2F&text=The+US+gov't+is+broken.+Let's+fix it.+Join+@lessig,+@MartinGilens+and+me+at+MIT+on+Fri,+Sep+19!+www.citizensrising.us+via+@Citizens_Rising"
+                   class="share-twitter" target="_blank"></a>
                 <a href="https://www.facebook.com/citizensrisingsymposium" class="share-facebook" target="_blank"></a>
             </div>
         </div>
@@ -315,18 +323,20 @@
 </div>
 
 <section class="sub-hero">
-     <div class="row">
+    <div class="row">
         <div class="twelve columns">
-            <h2>A Republic Held Hostage<br />and the Plan to Take It Back</h2>
+            <h2>A Republic Held Hostage<br/>and the Plan to Take It Back</h2>
         </div>
     </div>
     <div class="row">
         <div class="push_two eight columns">
-            <p>The US political system is broken.<br>Our governance has been bought and sold.<br>We all know this, but you can
+            <p>The US political system is broken.<br>Our governance has been bought and sold.<br>We all know this, but
+                you can
                 change it.</p>
 
             <p>Citizens Rising is a symposium exploring how this corrupted system is used to enhance the leverage of the
                 elite few over the many, and more importantly, it's the chance to ask:</p>
+
             <p>
                 <strong>&ldquo;What am I going to do about it?&rdquo;</strong>
             </p>
@@ -352,27 +362,32 @@
                 <div class="name">Lawrence Lessig</div>
                 <div class="bio">
                     <p>Professor of Law at Harvard Law School, Director of the Safra Center for Ethics at Harvard
-                    University, and political activist, <a href="http://en.wikipedia.org/wiki/Lawrence_Lessig"
-                                                           target="_blank">Lawrence
-                    Lessig</a> transformed intellectual-property law when he co-founded <a
-                        href="http://creativecommons.org/" target="_blank">Creative Commons</a>. It was during his
-                    efforts to improve
-                    copyright and cyberlaw that he ran headlong into the power of money in Congress. Now Lessig aims to
-                    realize a more fundamental transformation: fixing the system of corruption in American politics. He
-                    has founded the activist organization <a href="http://www.rootstrikers.org/" target="_blank">Rootstrikers</a>,
-                    and
-                    launched <a href="https://mayday.us/" target="_blank"> MayDay PAC</a>, a crowd-funded “super PAC to
-                    destroy all
-                    super PACs”. His latest book, <a href="http://republic.lessig.org/" target="_blank"><cite>Republic,
-                    Lost</cite></a>,
-                    was a major source of inspiration for this symposium.</p>
+                        University, and political activist, <a href="http://en.wikipedia.org/wiki/Lawrence_Lessig"
+                                                               target="_blank">Lawrence
+                            Lessig</a> transformed intellectual-property law when he co-founded <a
+                                href="http://creativecommons.org/" target="_blank">Creative Commons</a>. It was during
+                        his
+                        efforts to improve
+                        copyright and cyberlaw that he ran headlong into the power of money in Congress. Now Lessig aims
+                        to
+                        realize a more fundamental transformation: fixing the system of corruption in American politics.
+                        He
+                        has founded the activist organization <a href="http://www.rootstrikers.org/" target="_blank">Rootstrikers</a>,
+                        and
+                        launched <a href="https://mayday.us/" target="_blank"> MayDay PAC</a>, a crowd-funded “super PAC
+                        to
+                        destroy all
+                        super PACs”. His latest book, <a href="http://republic.lessig.org/" target="_blank"><cite>Republic,
+                            Lost</cite></a>,
+                        was a major source of inspiration for this symposium.</p>
 
                 </div>
             </div>
         </div>
         <div class="six columns">
             <div class="person">
-                <a href="http://media.mtvnservices.com/embed/mgid:arc:video:thedailyshow.com:0ae7ad4a-9358-4d0c-baca-c195d1c476f5" class="video-link">
+                <a href="http://media.mtvnservices.com/embed/mgid:arc:video:thedailyshow.com:0ae7ad4a-9358-4d0c-baca-c195d1c476f5"
+                   class="video-link">
                     <span class="play-button"></span>
                     <img src="img/gilens.png" alt="Martin Gilens"/><br/>
                 </a>
@@ -381,21 +396,26 @@
                 <div class="name">Martin Gilens</div>
                 <div class="bio">
                     <p>
-                    Professor of Politics at Princeton University, <a href="http://scholar.princeton.edu/mgilens"
-                                                                      target="_blank">Martin
-                    Gilens</a>’ research includes investigating how the wealthy have undue sway on American politics.
-                    Along with Benjamin Page of Northwestern University, Gilens authored the recent paper <a
-                        href="http://www.princeton.edu/~mgilens/Gilens%20homepage%20materials/Gilens%20and%20Page/Gilens%20and%20Page%202014-Testing%20Theories%203-7-14.pdf"
-                        target="_blank"><cite>Testing
-                    Theories of American Politics: Elites, Interest Groups, and Average Citizens</cite></a> which went
-                    viral <a href="http://www.newyorker.com/rational-irrationality/is-america-an-oligarchy"
-                             target="_blank">in the
-                    media</a>, being cited as evidence that the U.S. is an oligarchy. Their findings show that average
-                    citizens have little or no influence on policy outcomes. When economic elites and business groups
-                    disagree with the public majority, legislators pass policy favoring the affluent. This study, along
-                    with Gilens’ latest book, <a href="http://press.princeton.edu/titles/9836.html"
-                                                target="_blank"><cite>Affluence and
-                    Influence</cite></a>, was a major factor in motivating this symposium.
+                        Professor of Politics at Princeton University, <a href="http://scholar.princeton.edu/mgilens"
+                                                                          target="_blank">Martin
+                        Gilens</a>’ research includes investigating how the wealthy have undue sway on American
+                        politics.
+                        Along with Benjamin Page of Northwestern University, Gilens authored the recent paper <a
+                            href="http://www.princeton.edu/~mgilens/Gilens%20homepage%20materials/Gilens%20and%20Page/Gilens%20and%20Page%202014-Testing%20Theories%203-7-14.pdf"
+                            target="_blank"><cite>Testing
+                        Theories of American Politics: Elites, Interest Groups, and Average Citizens</cite></a> which
+                        went
+                        viral <a href="http://www.newyorker.com/rational-irrationality/is-america-an-oligarchy"
+                                 target="_blank">in the
+                        media</a>, being cited as evidence that the U.S. is an oligarchy. Their findings show that
+                        average
+                        citizens have little or no influence on policy outcomes. When economic elites and business
+                        groups
+                        disagree with the public majority, legislators pass policy favoring the affluent. This study,
+                        along
+                        with Gilens’ latest book, <a href="http://press.princeton.edu/titles/9836.html"
+                                                     target="_blank"><cite>Affluence and
+                        Influence</cite></a>, was a major factor in motivating this symposium.
                     </p>
                 </div>
             </div>
@@ -414,6 +434,7 @@
             <ul>
                 <li>
                     <span class="period-time">5:00 - 6:00 PM</span>
+
                     <div class="period-details">
                         <h3>Registration and Meet & Greet</h3>
                     </div>
@@ -421,6 +442,7 @@
                 </li>
                 <li>
                     <span class="period-time">6:00 - 6:15 PM</span>
+
                     <div class="period-details">
                         <h3>Opening Remarks</h3>
                     </div>
@@ -428,8 +450,10 @@
                 </li>
                 <li>
                     <span class="period-time">6:20 - 6:50 PM</span>
+
                     <div class="period-details">
                         <h3>Economic Inequality and Political Power in America</h3>
+
                         <div class="period-speaker">Martin Gilens</div>
                         <div class="period-speaker-title">Professor of Politics at Princeton University</div>
                         <div class="period-tail"></div>
@@ -437,8 +461,10 @@
                 </li>
                 <li>
                     <span class="period-time">6:55 - 7:25 PM</span>
+
                     <div class="period-details">
                         <h3>MAYDAY &ndash; a plan</h3>
+
                         <div class="period-speaker">Lawrence Lessig</div>
                         <div class="period-speaker-title">Professor of Law at Harvard Law School</div>
                         <div class="period-tail"></div>
@@ -446,14 +472,17 @@
                 </li>
                 <li>
                     <span class="period-time">7:30 - 8:10 PM</span>
+
                     <div class="period-details">
                         <h3>Panel Discussion with Gilens and Lessig</h3>
+
                         <div class="period-speaker">Special Guest Moderator to be Announced</div>
                         <div class="period-tail"></div>
                     </div>
                 </li>
                 <li>
                     <span class="period-time">8:15 - 8:20 PM</span>
+
                     <div class="period-details">
                         <h3>Closing Remarks</h3>
                     </div>
@@ -461,6 +490,7 @@
                 </li>
                 <li>
                     <span class="period-time">8:20 - 9:00 PM</span>
+
                     <div class="period-details">
                         <h3>Network with Partner Organizations</h3>
                     </div>
@@ -504,7 +534,8 @@
     <div class="row">
         <div class="twelve columns">
             <h2>Join the movement</h2>
-            <a href="https://www.eventbrite.com/e/citizens-rising-a-republic-held-hostage-and-the-plan-to-take-it-back-tickets-12201718669" class="button" target="_blank">Register Now</a>
+            <a href="https://www.eventbrite.com/e/citizens-rising-a-republic-held-hostage-and-the-plan-to-take-it-back-tickets-12201718669"
+               class="button" target="_blank">Register Now</a>
         </div>
     </div>
 </section>
@@ -523,12 +554,17 @@
                 </li>
 
                 <li><a href="https://www.facebook.com/hlsrootstrikers" target="_blank"><img alt="Harvard Rootstrikers"
-                                                                                    src="img/sponsors/RootstrikersHarvardLogo.png"></a>
+                                                                                            src="img/sponsors/RootstrikersHarvardLogo.png"></a>
                 </li>
-                <li><a href="http://www.commoncause.org/states/massachusetts/" target="_blank"><img alt="Common Cause MA"
-                                                                         src="img/sponsors/common_cause_massachusetts.jpg"></a></li>
+                <li><a href="http://www.commoncause.org/states/massachusetts/" target="_blank"><img
+                        alt="Common Cause MA"
+                        src="img/sponsors/common_cause_massachusetts.jpg"></a></li>
+                <li>
+                    <a href="http://www.nhrebellion.org/" target="_blank"><img
+                            alt="NH Rebellion"
+                            src="img/sponsors/nh_rebellion.png">
+                </li>
 
-                
             </ul>
         </div>
     </div>
@@ -538,20 +574,25 @@
     <div class="row">
         <div class="twelve columns">
             <h2 id="aboutus" class="light">About Us</h2>
-            
+
         </div>
     </div>
     <div class="row">
         <div class="volunteer-container push_two two columns">
             <img class="logo" src="img/sponsors/ThinkWhite.png" alt="The High Impact Network">
-            <a href="https://docs.google.com/forms/d/13iac2LWdHSdDJpVb5FTVpAVs1tKFaEZSSK8VQ5YrvOk/viewform" class="button button-volunteer" target="_blank"> Volunteer</a>
+            <a href="https://docs.google.com/forms/d/13iac2LWdHSdDJpVb5FTVpAVs1tKFaEZSSK8VQ5YrvOk/viewform"
+               class="button button-volunteer" target="_blank"> Volunteer</a>
         </div>
         <div class="six columns">
             <p>This event is being sponsored by
-                <a href="http://www.thehighimpactnetwork.org/" target="_blank" class="reverse">The High Impact Network</a> (<abbr
-                        title="The High Impact Network">THINK</abbr>), an effective altruism student group at MIT, with funding provided by the MIT Association of
-                Student Activities Large Event Fund. In addition, dozens of concerned citizens have volunteered their time and
-                skillsets, including students, engineers, artists, designers, and people just like you. Questions? Contact <a href="mailto:drmiller@mit.edu" class="reverse" target="_blank">Daniel Miller</a>.</p>
+                <a href="http://www.thehighimpactnetwork.org/" target="_blank" class="reverse">The High Impact
+                    Network</a> (<abbr
+                        title="The High Impact Network">THINK</abbr>), an effective altruism student group at MIT, with
+                funding provided by the MIT Association of
+                Student Activities Large Event Fund. In addition, dozens of concerned citizens have volunteered their
+                time and
+                skillsets, including students, engineers, artists, designers, and people just like you. Questions?
+                Contact <a href="mailto:drmiller@mit.edu" class="reverse" target="_blank">Daniel Miller</a>.</p>
         </div>
     </div>
 </section>
