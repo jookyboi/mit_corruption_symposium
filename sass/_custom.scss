@@ -364,6 +364,13 @@ body {
     background-color: $black;
     color: $white;
 
+    .sub-content-subtitle{
+      color:$white;
+      text-align: center;
+      @include font-size(26px);
+
+    }
+
     p {
       @include font-size(22px);
       text-align: center;
@@ -475,6 +482,22 @@ body {
 
         border: 0;
       }
+    }
+  }
+
+  .hackfordemocracy{
+    h3{
+      @include font-size(20px);
+      margin-bottom:5px;
+      padding:0;
+      text-align:center;
+    }
+    h4{
+      text-align:center;
+    }
+
+    ul{
+      list-style: disc outside;
     }
   }
 
