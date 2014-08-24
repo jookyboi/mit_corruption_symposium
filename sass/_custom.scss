@@ -204,9 +204,18 @@ body {
         margin-bottom:40px;
       }
 
-      .share {
+      
+    }
+  }
+
+  .sub-content.share{
+    background-color: $black;
+    text-align:center;
+
+    padding: 10px 0;
+
+    .share {
         display: inline;
-        margin-left: 20px;
         vertical-align: middle;
 
         > a {
@@ -242,7 +251,6 @@ body {
           background: url('../img/facebook_icon.png') no-repeat 0 0;
         }
       }
-    }
   }
 
   .sub-hero {
@@ -547,6 +555,7 @@ body {
       }
 
       .hero-left {
+        margin-top:40px;
         padding-top: 30px;
       }
 
