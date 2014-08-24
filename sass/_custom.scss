@@ -10,6 +10,7 @@ $light_red: #F39385;
 $red: #BB4836;
 $dark_red: #892212;
 $beige: #E8E6DF;
+$yellow: #FFFC19;
 
 // Icons
 .icon-downwards {
@@ -24,7 +25,7 @@ $beige: #E8E6DF;
 // Buttons
 .button {
   display: inline-block;
-  padding: 10px 18px;
+  padding: 5px 10px;
 
   background-color: $red;
   color: $white;
@@ -110,7 +111,7 @@ body {
           }
 
           &:last-child {
-            color: #FFFC19;
+            color: $yellow;
           }
 
           &:hover {
@@ -122,8 +123,8 @@ body {
   }
 
   #hero {
-    padding-top: 130px;
-    padding-bottom: 100px;
+    padding-top: 70px;
+    padding-bottom: 30px;
 
     color: $white;
     background: $black url("../img/hero_banner.jpg");
@@ -135,7 +136,7 @@ body {
     }
 
     .hero-left {
-      margin-top: 50px;
+      margin-top: 100px;
       text-align: center;
 
       p {
@@ -171,24 +172,36 @@ body {
     }
 
     .hero-right {
-      margin-top: 40px;
+      margin-top: 10px;
       padding-left: 30px;
-      padding-top: 20px;
+      padding-top: 10px;
       border-left: 1px solid $white_transparent;
 
       > h2 {
         @include font-size(40px);
         color: $white;
         font-weight: 600;
+        padding-bottom: 15px;
       }
 
-      .date-location {
-        display: block;
-        margin-bottom: 20px;
+      > h3{
+        padding-top:0;
+        padding-bottom: 0;
+        color: $white;
+        @include font-size(20px);
+        font-weight: $font-weight-semibold;
       }
 
-      .button {
-        padding: 10px 25px;
+      .date-location{
+        margin-bottom: 5px;
+      }
+
+      .date, .location,  .date-location-dash{
+        display: inline-block;
+      }
+
+      .button{
+        margin-bottom:40px;
       }
 
       .share {
@@ -434,7 +447,7 @@ body {
     }
   }
 
-  .location {
+  .sub-content.location {
     background-color: $dark_red;
     text-align: center;
 
@@ -543,6 +556,13 @@ body {
 
         border-left: none;
         border-top: 1px solid $white_transparent;
+
+        .date, .location{
+          display:block;
+        }
+        .date-location-dash{
+          display:none;
+        }
       }
     }
 
