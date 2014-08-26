@@ -384,6 +384,12 @@ body {
 
     }
 
+    .event-subtitle{
+      color:$white;
+      text-align: center;
+
+    }
+
     p {
       @include font-size(22px);
       text-align: center;
