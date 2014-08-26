@@ -380,13 +380,14 @@ body {
     .sub-content-subtitle{
       color:$white;
       text-align: center;
-      @include font-size(26px);
+      @include font-size(18px);
 
     }
 
     .event-subtitle{
       color:$white;
       text-align: center;
+      @include font-size (26px);
 
     }
 
