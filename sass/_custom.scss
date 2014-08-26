@@ -25,7 +25,7 @@ $yellow: #FFFC19;
 // Buttons
 .button {
   display: inline-block;
-  padding: 5px 10px;
+  padding: 5px 30px;
 
   background-color: $red;
   color: $white;
@@ -130,22 +130,36 @@ body {
     background: $black url("../img/hero_banner.jpg");
     background-size: cover;
 
-    em {
-      font-style: normal;
-      color: $red;
+    
+
+
+
+    h2 {
+        @include font-size(40px);
+        color: $white;
+        font-weight: 600;
+        padding-bottom: 15px;
+        text-align:center;
     }
 
     .hero-left {
-      margin-top: 100px;
+      margin-top: 43px;
       text-align: center;
 
       p {
         font-weight: $font-weight-bold;
+        color: $red;
+      }
+
+      em {
+        font-style: normal;
+        color: $white;
       }
 
       .money-source {
         display: block;
         text-transform: uppercase;
+        color: $red;
       }
 
       .money-figure {
@@ -154,7 +168,7 @@ body {
         display: block;
         text-transform: uppercase;
 
-        color: $red;
+        color: $white;
         @include font-size(34px);
 
       }
@@ -162,7 +176,7 @@ body {
       .info-source {
         display: block;
 
-        margin-top: 30px;
+        margin-top: 19px;
         @include font-size(10px);
 
         color: $dark_gray;
@@ -177,12 +191,6 @@ body {
       padding-top: 10px;
       border-left: 1px solid $white_transparent;
 
-      > h2 {
-        @include font-size(40px);
-        color: $white;
-        font-weight: 600;
-        padding-bottom: 15px;
-      }
 
       > h3{
         padding-top:0;
@@ -201,6 +209,9 @@ body {
       }
 
       .button{
+        margin-bottom:30px;
+      }
+      .button:first-of-type{
         margin-bottom:40px;
       }
 
@@ -492,12 +503,21 @@ body {
       padding:0;
       text-align:center;
     }
+
+    .workshop-date-location{
+      margin-bottom:20px;
+    }
+
     h4{
       text-align:center;
     }
 
     ul{
       list-style: disc outside;
+      }
+
+    .action-area{
+      text-align:center;
     }
   }
 
