@@ -1840,8 +1840,8 @@ body .schedule ul li .period-details .period-speaker-title, body .schedule ul li
 body .schedule ul li .period-details .period-speaker-tbd { margin-top: 10px; }
 body .schedule ul li .period-tail { position: absolute; left: 133px; top: 38px; background: #bb4836; width: 4px; height: calc(100% - 10px); }
 body .join-now { height: 330px; background: #240905 url("../img/light_brigade.jpg"); background-size: cover; text-align: center; text-align: center; }
-body .join-now h2 { margin-top: 58px; color: white; }
-body .join-now .button { margin-top: 15px; padding: 10px 30px; }
+body .join-now h2 { margin-top: 58px; color: white; margin-bottom: 20px; }
+body .join-now .button { margin-bottom: 20px; padding: 10px 30px; display: block; }
 body .sub-content.location { background-color: #892212; text-align: center; }
 body .sub-content.location h3 { margin-top: 20px; color: white; font-size: 30px; font-size: 1.875rem; }
 body .sub-content.location .map-container { margin-top: 40px; }
@@ -1859,7 +1859,6 @@ body .sponsors ul > li img { height: 50px; }
 body .aboutus { background-color: #240905; }
 body .aboutus h2 { margin-bottom: 20px; }
 body .aboutus .logo { display: block; margin: auto; margin-bottom: 10px; width: 100%; }
-body .aboutus .button-volunteer { display: block; margin: auto; text-align: center; padding-left: 24px; }
 body .aboutus p { color: white; }
 body .aboutus abbr { text-transform: uppercase; font-size: 90%; color: white; border-bottom: none; cursor: help; }
 
@@ -1875,12 +1874,18 @@ body .aboutus abbr { text-transform: uppercase; font-size: 90%; color: white; bo
   body .sub-hero p { text-align: center; font-size: 14px; font-size: 0.875rem; }
   body .sub-hero .money-figure { font-size: 40px; font-size: 2.5rem; }
   body .schedule .period-time { font-size: 12px; font-size: 0.75rem; }
-  body .schedule ul li .period-details h3 { font-size: 14px; font-size: 0.875rem; }
+  body .schedule ul { margin: 30px 0 0 0; padding: 0; }
+  body .schedule ul li { position: static; margin-bottom: 30px; background: url("../img/period_circle.png") no-repeat; }
+  body .schedule ul li .period-time, body .schedule ul li .period-details { display: block; position: static; margin-left: 45px; }
+  body .schedule ul li .period-tail { display: none; }
+  body .schedule ul li .period-details h3 { font-size: 18px; font-size: 1.125rem; }
   body .schedule ul li .period-details .period-speaker { font-size: 14px; font-size: 0.875rem; }
   body .schedule ul li .period-details .period-speaker-title { font-size: 14px; font-size: 0.875rem; }
   body .schedule ul li .period-details .period-tweet { font-size: 14px; font-size: 0.875rem; }
   body .schedule ul li .period-details .period-speaker-tbd { font-size: 14px; font-size: 0.875rem; }
   body .hackfordemocracy .hackfordemocracy-description { font-size: 14px; font-size: 0.875rem; }
   body .sponsors ul { text-align: center; }
+  body .join-now { height: 400px; }
+  body .join-now h2 { margin-top: 25px; }
   body .aboutus .volunteer-container { text-align: center; margin-bottom: 20px; }
   body .aboutus a:hover { color: white !important; } }
