@@ -469,14 +469,18 @@ body {
     h2 {
       margin-top: 58px;
       color: $white;
+      margin-bottom: 20px;
     }
 
     text-align: center;
 
     .button {
-      margin-top: 15px;
+      margin-bottom: 20px;
       padding: 10px 30px;
+      display: block;
     }
+
+
   }
 
   .sub-content.location {
@@ -566,12 +570,6 @@ body {
           width:100%;
     }
 
-    .button-volunteer{
-      display:block;
-      margin: auto;
-      text-align:center;
-      padding-left:24px;
-    }
 
     p {
       color: $white;
@@ -649,10 +647,34 @@ body {
         @include font-size(12px);
       }
 
+
+        ul {
+          margin: 30px 0 0 0;
+          padding: 0;
+
+          li {
+            position: static;
+            margin-bottom: 30px;
+            background: url("../img/period_circle.png") no-repeat;
+
+            .period-time, .period-details,{
+              display: block;
+              position: static;
+
+              margin-left: 45px;
+
+            }
+
+           .period-tail{
+              display: none;
+            }
+      }
+    }
+
       ul li .period-details{
 
         h3{
-          @include font-size(14px);
+          @include font-size(18px);
         }
         .period-speaker{
           @include font-size(14px);
@@ -668,7 +690,6 @@ body {
           @include font-size(14px);
         }
 
-
       } 
       
     }
@@ -681,6 +702,15 @@ body {
     .sponsors {
       ul {
         text-align: center;
+      }
+    }
+
+    .join-now{
+      
+      height: 400px;
+
+      h2{
+        margin-top: 25px;
       }
     }
 
