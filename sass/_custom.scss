@@ -469,14 +469,18 @@ body {
     h2 {
       margin-top: 58px;
       color: $white;
+      margin-bottom: 20px;
     }
 
     text-align: center;
 
     .button {
-      margin-top: 15px;
+      margin-bottom: 20px;
       padding: 10px 30px;
+      display: block;
     }
+
+
   }
 
   .sub-content.location {
@@ -566,12 +570,6 @@ body {
           width:100%;
     }
 
-    .button-volunteer{
-      display:block;
-      margin: auto;
-      text-align:center;
-      padding-left:24px;
-    }
 
     p {
       color: $white;
@@ -681,6 +679,15 @@ body {
     .sponsors {
       ul {
         text-align: center;
+      }
+    }
+
+    .join-now{
+      
+      height: 400px;
+
+      h2{
+        margin-top: 25px;
       }
     }
 
