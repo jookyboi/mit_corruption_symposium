@@ -586,6 +586,51 @@ body {
   }
 }
 
+#references{
+  margin-top: 100px;
+
+  margin-bottom: 100px;
+  .pagetitle{
+    margin-bottom:30px; 
+    text-align: center;
+  }
+  .smallh1{
+    @include font-size(48px);
+  }
+
+  .author{
+    margin-bottom: 30px;
+  }
+
+
+  .speaker{
+    @include font-size(24px);
+  }
+
+  .speaker-title{
+    @include font-size(24px);
+    color: $dark_gray;
+  }
+
+  .download{
+    margin-bottom: 30px;
+  }
+
+  .smallh3{
+    @include font-size(18px);
+    font-weight: bold;
+  }
+
+  .references{
+    @include font-size(14px);
+
+    li{
+        margin-bottom: 0.673em;
+    }
+  }
+
+}
+
 // responsive layouts
 @include respond(all-phones) {
   body {

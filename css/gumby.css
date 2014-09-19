@@ -1862,6 +1862,17 @@ body .aboutus .logo { display: block; margin: auto; margin-bottom: 10px; width: 
 body .aboutus p { color: white; }
 body .aboutus abbr { text-transform: uppercase; font-size: 90%; color: white; border-bottom: none; cursor: help; }
 
+#references { margin-top: 100px; margin-bottom: 100px; }
+#references .pagetitle { margin-bottom: 30px; text-align: center; }
+#references .smallh1 { font-size: 48px; font-size: 3rem; }
+#references .author { margin-bottom: 30px; }
+#references .speaker { font-size: 24px; font-size: 1.5rem; }
+#references .speaker-title { font-size: 24px; font-size: 1.5rem; color: #777777; }
+#references .download { margin-bottom: 30px; }
+#references .smallh3 { font-size: 18px; font-size: 1.125rem; font-weight: bold; }
+#references .references { font-size: 14px; font-size: 0.875rem; }
+#references .references li { margin-bottom: 0.673em; }
+
 @media only screen and (max-width: 767px) { body > header .nav-container { display: none; }
   body #hero { text-align: center; padding-top: 70px; }
   body #hero .main-title { font-size: 30px; font-size: 1.875rem; }
