@@ -1788,6 +1788,9 @@ body > header .nav-container > nav > a:last-child { color: #fffc19; }
 body > header .nav-container > nav > a:hover { color: #240905; }
 body #hero { padding-top: 70px; padding-bottom: 30px; color: white; background: #240905 url("../img/hero_banner.jpg"); background-size: cover; }
 body #hero h2 { font-size: 40px; font-size: 2.5rem; color: white; font-weight: 600; padding-bottom: 15px; text-align: center; }
+body #hero .thankyou { background-color: white; border-radius: 3px; text-align: center; color: #240905; padding: 0 20px 40px 20px; margin-bottom: 30px; }
+body #hero .thankyou p { text-align: left; }
+body #hero .thankyou h4 { margin-bottom: 15px; }
 body #hero .hero-left { margin-top: 43px; text-align: center; }
 body #hero .hero-left p { font-weight: 700; color: #bb4836; }
 body #hero .hero-left em { font-style: normal; color: white; }
@@ -1795,9 +1798,11 @@ body #hero .hero-left .money-source { display: block; text-transform: uppercase;
 body #hero .hero-left .money-figure { margin: 10px 0; display: block; text-transform: uppercase; color: white; font-size: 34px; font-size: 2.125rem; }
 body #hero .hero-left .info-source { display: block; margin-top: 19px; font-size: 10px; font-size: 0.625rem; color: #777777; line-height: 1rem; }
 body #hero .hero-right { margin-top: 10px; padding-left: 30px; padding-top: 10px; border-left: 1px solid rgba(255, 255, 255, 0.5); }
-body #hero .hero-right > h3 { padding-top: 0; padding-bottom: 0; color: white; font-size: 20px; font-size: 1.25rem; font-weight: 600; }
+body #hero .hero-right > h3 { padding-top: 30px; padding-bottom: 0; color: white; font-size: 20px; font-size: 1.25rem; font-weight: 600; }
+body #hero .hero-right > h3.h4d { padding-top: 0; }
 body #hero .hero-right .date-location { margin-bottom: 5px; }
 body #hero .hero-right .date, body #hero .hero-right .location, body #hero .hero-right .date-location-dash { display: inline-block; }
+body #hero .hero-right .location { padding-bottom: 40px; }
 body #hero .hero-right .button { margin-bottom: 30px; }
 body #hero .hero-right .button:first-of-type { margin-bottom: 40px; }
 body .sub-content.share { background-color: #240905; text-align: center; padding: 10px 0; }
@@ -1841,7 +1846,7 @@ body .schedule ul li .period-details .period-speaker-tbd { margin-top: 10px; }
 body .schedule ul li .period-tail { position: absolute; left: 133px; top: 38px; background: #bb4836; width: 4px; height: calc(100% - 10px); }
 body .join-now { height: 330px; background: #240905 url("../img/light_brigade.jpg"); background-size: cover; text-align: center; text-align: center; }
 body .join-now h2 { margin-top: 58px; color: white; margin-bottom: 20px; }
-body .join-now .button { margin-bottom: 20px; padding: 10px 30px; display: block; }
+body .join-now .button { margin-bottom: 20px; padding: 10px 30px; }
 body .sub-content.location { background-color: #892212; text-align: center; }
 body .sub-content.location h3 { margin-top: 20px; color: white; font-size: 30px; font-size: 1.875rem; }
 body .sub-content.location .map-container { margin-top: 40px; }
@@ -1878,9 +1883,10 @@ body .aboutus abbr { text-transform: uppercase; font-size: 90%; color: white; bo
   body #hero .main-title { font-size: 30px; font-size: 1.875rem; }
   body #hero p { text-align: center; }
   body #hero .hero-left { margin-top: 40px; padding-top: 30px; }
-  body #hero .hero-right { padding-left: 0; padding-top: 30px; border-left: none; border-top: 1px solid rgba(255, 255, 255, 0.5); }
+  body #hero .hero-right { padding-left: 0; padding-top: 30px; border-left: none; border-top: 1px solid rgba(255, 255, 255, 0.5); height: 215px; }
   body #hero .hero-right .date, body #hero .hero-right .location { display: block; }
   body #hero .hero-right .date-location-dash { display: none; }
+  body #hero .hero-right > .h4d { padding-top: 30px; }
   body .sub-hero h2 { font-size: 30px; font-size: 1.875rem; }
   body .sub-hero p { text-align: center; font-size: 14px; font-size: 0.875rem; }
   body .sub-hero .money-figure { font-size: 40px; font-size: 2.5rem; }

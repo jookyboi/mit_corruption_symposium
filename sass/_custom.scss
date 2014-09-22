@@ -139,6 +139,24 @@ body {
         text-align:center;
     }
 
+    .thankyou{
+      background-color:$white;
+      border-radius:3px;
+      text-align: center;
+      color:$black;
+      padding:0 20px 40px 20px;
+      margin-bottom: 30px;
+
+      p{
+        text-align: left;
+      }
+
+      h4{
+        margin-bottom: 15px;
+      }
+
+    }
+
     .hero-left {
       margin-top: 43px;
       text-align: center;
@@ -190,11 +208,15 @@ body {
 
 
       > h3{
-        padding-top:0;
+        padding-top:30px;
         padding-bottom: 0;
         color: $white;
         @include font-size(20px);
         font-weight: $font-weight-semibold;
+        
+        &.h4d{
+          padding-top:0;
+        }
       }
 
       .date-location{
@@ -203,6 +225,10 @@ body {
 
       .date, .location,  .date-location-dash{
         display: inline-block;
+      }
+
+      .location{
+        padding-bottom:40px;
       }
 
       .button{
@@ -477,7 +503,6 @@ body {
     .button {
       margin-bottom: 20px;
       padding: 10px 30px;
-      display: block;
     }
 
 
@@ -662,6 +687,7 @@ body {
 
         border-left: none;
         border-top: 1px solid $white_transparent;
+        height:215px;
 
         .date, .location{
           display:block;
@@ -669,6 +695,12 @@ body {
         .date-location-dash{
           display:none;
         }
+
+        > .h4d{
+          padding-top:30px
+        }
+
+
       }
     }
 
