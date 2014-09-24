@@ -1788,17 +1788,21 @@ body > header .nav-container > nav > a:last-child { color: #fffc19; }
 body > header .nav-container > nav > a:hover { color: #240905; }
 body #hero { padding-top: 70px; padding-bottom: 30px; color: white; background: #240905 url("../img/hero_banner.jpg"); background-size: cover; }
 body #hero h2 { font-size: 40px; font-size: 2.5rem; color: white; font-weight: 600; padding-bottom: 15px; text-align: center; }
-body #hero .thankyou { background-color: white; border-radius: 3px; text-align: center; color: #240905; padding: 0 20px 40px 20px; margin-bottom: 30px; }
-body #hero .thankyou p { text-align: left; }
-body #hero .thankyou h4 { margin-bottom: 15px; }
-body #hero .hero-left { margin-top: 43px; text-align: center; }
+body #hero .thankyou { border-radius: 5px; text-align: center; color: white; padding: 0 20px 0 20px; }
+body #hero .thankyou h1, body #hero .thankyou h4 { color: white; }
+body #hero .thankyou p { text-align: left; font-weight: 600; }
+body #hero .thankyou h4 { margin-bottom: 15px; padding-bottom: 0; }
+body #hero .thankyou a { font-weight: 600; }
+body #hero .stayinvolvedbuttons { text-align: center; margin-bottom: 30px; }
+body #hero .stayinvolvedbuttons .button { display: block; }
+body #hero .hero-left { margin-top: 25px; text-align: center; }
 body #hero .hero-left p { font-weight: 700; color: #bb4836; }
 body #hero .hero-left em { font-style: normal; color: white; }
 body #hero .hero-left .money-source { display: block; text-transform: uppercase; color: #bb4836; }
 body #hero .hero-left .money-figure { margin: 10px 0; display: block; text-transform: uppercase; color: white; font-size: 34px; font-size: 2.125rem; }
 body #hero .hero-left .info-source { display: block; margin-top: 19px; font-size: 10px; font-size: 0.625rem; color: #777777; line-height: 1rem; }
 body #hero .hero-right { margin-top: 10px; padding-left: 30px; padding-top: 10px; border-left: 1px solid rgba(255, 255, 255, 0.5); }
-body #hero .hero-right > h3 { padding-top: 30px; padding-bottom: 0; color: white; font-size: 20px; font-size: 1.25rem; font-weight: 600; }
+body #hero .hero-right > h3 { padding-top: 15px; padding-bottom: 0; color: white; font-size: 20px; font-size: 1.25rem; font-weight: 600; }
 body #hero .hero-right > h3.h4d { padding-top: 0; }
 body #hero .hero-right .date-location { margin-bottom: 5px; }
 body #hero .hero-right .date, body #hero .hero-right .location, body #hero .hero-right .date-location-dash { display: inline-block; }
