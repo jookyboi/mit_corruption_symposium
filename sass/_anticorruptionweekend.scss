@@ -1,0 +1,776 @@
+// Colors
+$white: white;
+$white_transparent: rgba(255, 255, 255, 0.5);
+$black: #240905;
+
+$light_gray: #eee;
+$dark_gray: #777;
+
+$light_red: #F39385;
+$red: #BB4836;
+$dark_red: #892212;
+$beige: #E8E6DF;
+$yellow: #FFFC19;
+
+// Icons
+.icon-downwards {
+  width: 20px;
+  height: 23px;
+  display: inline-block;
+  margin-bottom: 10px;
+
+  background: url('../img/downwards.png') no-repeat 0 0;
+}
+
+// Buttons
+.button {
+  display: inline-block;
+  padding: 5px 30px;
+
+  background-color: $red;
+  color: $white;
+  font-weight: $font-weight-bold;
+  border-radius: 5px;
+
+  transition: background-color 0.1s;
+  text-transform: uppercase;
+
+  &:hover {
+    background-color: $dark_red;
+    color: $white !important;
+  }
+}
+
+// Page
+body {
+  font-family: 'Open Sans', Arial, sans-serif;
+
+  a[href] {
+    &:hover {
+      color: $black;
+    }
+
+    &.light {
+      color: $light_red;
+
+      &:hover {
+        color: $black;
+      }
+
+      &:active {
+        color: $white;
+      }
+    }
+
+    &.reverse:hover {
+      color: $white;
+    }
+  }
+
+  > header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+
+    padding: 7px 0 0 0;
+
+    color: $white;
+    background-color: $dark_red;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+
+    .logo {
+      font-size: 20px;
+      font-weight: 700;
+
+      > a {
+        color: $white;
+      }
+    }
+
+    .nav-container {
+      text-align: right;
+      margin-top: 7px;
+
+      > nav {
+        display: inline-block;
+        text-transform: uppercase;
+
+        > a {
+          display: inline-block;
+          margin-left: 25px;
+
+          color: $white;
+          font-weight: $font-weight-bold;
+          @include font-size(14px);
+
+          transition: color 0.1s;
+
+          &:first-child {
+            margin: 0;
+          }
+
+          &:last-child {
+            color: $yellow;
+          }
+
+          &:hover {
+            color: $black;
+          }
+        }
+      }
+    }
+  }
+
+  #hero {
+    padding-top: 70px;
+    padding-bottom: 30px;
+
+    color: $white;
+    background: $black url("../img/hero_banner.jpg");
+    background-size: cover;
+
+    
+    h2 {
+        @include font-size(40px);
+        color: $white;
+        font-weight: 600;
+        padding-bottom: 15px;
+        text-align:center;
+    }
+
+    .hero-left {
+      margin-top: 43px;
+      text-align: center;
+
+      p {
+        font-weight: $font-weight-bold;
+        color: $red;
+      }
+
+      em {
+        font-style: normal;
+        color: $white;
+      }
+
+      .money-source {
+        display: block;
+        text-transform: uppercase;
+        color: $red;
+      }
+
+      .money-figure {
+        margin: 10px 0;
+
+        display: block;
+        text-transform: uppercase;
+
+        color: $white;
+        @include font-size(34px);
+
+      }
+
+      .info-source {
+        display: block;
+
+        margin-top: 19px;
+        @include font-size(10px);
+
+        color: $dark_gray;
+
+        line-height:1rem;
+      }
+    }
+
+    .hero-right {
+      margin-top: 10px;
+      padding-left: 30px;
+      padding-top: 10px;
+      border-left: 1px solid $white_transparent;
+
+
+      > h3{
+        padding-top:0;
+        padding-bottom: 0;
+        color: $white;
+        @include font-size(20px);
+        font-weight: $font-weight-semibold;
+      }
+
+      .date-location{
+        margin-bottom: 5px;
+      }
+
+      .date, .location,  .date-location-dash{
+        display: inline-block;
+      }
+
+      .button{
+        margin-bottom:30px;
+      }
+      .button:first-of-type{
+        margin-bottom:40px;
+      }
+
+      
+    }
+  }
+
+  .sub-content.share{
+    background-color: $black;
+    text-align:center;
+
+    padding: 10px 0;
+
+    .share {
+        display: inline;
+        vertical-align: middle;
+
+        > a {
+          display: inline-block;
+          margin-top: 5px;
+          margin-right: 50px;
+
+
+          opacity: 0.8;
+
+          &:hover {
+            opacity: 1.0;
+          }
+        }
+
+        .share-email {
+          width: 31px;
+          height: 20px;
+
+          background: url('../img/email_icon.png') no-repeat 0 0;
+        }
+
+        .share-twitter {
+          width: 25px;
+          height: 20px;
+
+          background: url('../img/twitter_icon.png') no-repeat 0 0;
+        }
+
+        .share-facebook {
+          width: 20px;
+          height: 20px;
+
+          background: url('../img/facebook_icon.png') no-repeat 0 0;
+          margin-right:0;
+        }
+      }
+  }
+
+  .sub-hero {
+    padding: 40px 0;
+    background-color: $beige;
+    text-align: center;
+
+    h2 {
+      margin-bottom: 30px;
+    }
+
+    p {
+      @include font-size(22px);
+
+      &.first-line {
+        @include font-size(28px);
+      }
+    }
+  }
+
+  .sub-content {
+    position: relative;
+    padding: 40px 0;
+
+    h2 {
+      text-transform: uppercase;
+      text-align: center;
+
+      @include font-size(34px);
+
+      &.light {
+        color: $dark_gray;
+      }
+
+      &.light-red {
+        color: $light_red;
+      }
+    }
+  }
+
+  .speakers {
+    .person {
+      position: relative;
+      margin-top: 30px;
+
+      .video-link {
+        position: relative;
+        display: block;
+
+        .play-button {
+          position: absolute;
+          margin-left: -20px;
+          margin-top: -25px;
+
+          left: 50%;
+          top: 50%;
+          display: inline-block;
+
+          width: 50px;
+          height: 60px;
+
+          background: url("../img/play_button.png") no-repeat 0 0;
+          opacity: 0.5;
+        }
+
+        &:hover .play-button {
+          opacity: 0.8;
+        }
+      }
+
+      img {
+        margin-bottom: -7px;
+        cursor: pointer;
+      }
+
+      .quote {
+        width: 100%;
+        padding: 15px;
+
+        background: $black;
+        color: $white;
+        font-style: italic;
+        text-align: center;
+
+        @include font-size(14px);
+      }
+
+      .name {
+        padding: 15px;
+
+        background-color: $red;
+        color: $white;
+
+        text-align: center;
+
+        @include font-size(26px);
+        font-weight: $font-weight-bold;
+      }
+
+      .bio {
+        padding: 10px;
+
+        > p {
+          @include font-size(14px);
+        }
+      }
+    }
+  }
+
+  .schedule {
+    background-color: $black;
+    color: $white;
+
+    .sub-content-subtitle{
+      color:$white;
+      text-align: center;
+      @include font-size(18px);
+
+    }
+
+    .event-subtitle{
+      color:$white;
+      text-align: center;
+      @include font-size (26px);
+
+    }
+
+    p {
+      @include font-size(22px);
+      text-align: center;
+
+      &:first-child {
+        margin-top: 30px;
+      }
+    }
+
+    ul {
+      margin: 30px 0 0 0;
+      padding: 0;
+
+      li {
+        position: relative;
+        margin-bottom: 30px;
+        background: url("../img/period_circle.png") no-repeat 120px 3px;
+
+        .period-time {
+          position: absolute;
+          top: 3px;
+          left: 0;
+
+          color: $red;
+          font-weight: bold;
+        }
+
+        .period-details {
+          display: inline-block;
+          margin-left: 163px;
+
+          h3 {
+            @include font-size(20px);
+            font-weight: $font-weight-bold;
+            color: $white;
+          }
+
+          .period-speaker {
+            margin-top: 8px;
+          }
+
+          .period-tweet {
+            padding-left: 25px;
+            background: url('../img/twitter_icon.png') no-repeat 0 50%;
+            background-size: 20px 16px;
+          }
+
+          .period-speaker-title, .period-speaker-tbd {
+            color: $dark_gray;
+          }
+
+          .period-speaker-tbd {
+            margin-top: 10px;
+          }
+        }
+
+        .period-tail {
+          position: absolute;
+          left: 133px;
+          top: 38px;
+
+          background: $red;
+
+          width: 4px;
+          height: calc(100% - 10px);
+        }
+      }
+    }
+  }
+
+  .join-now {
+    height: 330px;
+
+    background: $black url("../img/light_brigade.jpg");
+    background-size: cover;
+
+    text-align: center;
+
+    h2 {
+      margin-top: 58px;
+      color: $white;
+      margin-bottom: 20px;
+    }
+
+    text-align: center;
+
+    .button {
+      margin-bottom: 20px;
+      padding: 10px 30px;
+      display: block;
+    }
+
+
+  }
+
+  .sub-content.location {
+    background-color: $dark_red;
+    text-align: center;
+
+    h3 {
+      margin-top: 20px;
+
+      color: $white;
+      @include font-size(30px);
+    }
+
+    .map-container {
+      margin-top: 40px;
+
+      .map-embed {
+        width: 100%;
+        height: 305px;
+
+        border: 0;
+      }
+    }
+  }
+
+  .hackfordemocracy{
+    h3{
+      @include font-size(20px);
+      margin-bottom:5px;
+      padding:0;
+      text-align:center;
+    }
+
+    .workshop-date-location{
+      margin-bottom:20px;
+    }
+
+    h4{
+      text-align:center;
+    }
+
+    ul{
+      list-style: disc outside;
+      }
+
+    .action-area{
+      text-align:center;
+    }
+  }
+
+  .sponsors {
+    text-align: center;
+
+    ul {
+      margin: 20px 0 0 0;
+      padding: 0;
+
+      > li {
+        display: inline-block;
+        margin-right: 40px;
+
+        height: 70px;
+        line-height: 70px;
+
+        &:last-child {
+          margin: 0;
+        }
+
+        img {
+          height: 50px;
+        }
+      }
+    }
+  }
+
+  .aboutus {
+    background-color: $black;
+
+    h2 {
+      margin-bottom: 20px;
+    }
+    
+    .logo{
+          display:block;
+          margin: auto;
+          margin-bottom:10px;
+          width:100%;
+    }
+
+
+    p {
+      color: $white;
+    }
+
+    abbr {
+      text-transform: uppercase;
+      font-size: 90%;
+      color: $white;
+
+      border-bottom: none;
+      cursor: help;
+    }
+  }
+}
+
+#references{
+  margin-top: 100px;
+
+  margin-bottom: 100px;
+  .pagetitle{
+    margin-bottom:30px; 
+    text-align: center;
+  }
+  .smallh1{
+    @include font-size(48px);
+  }
+
+  .author{
+    margin-bottom: 30px;
+  }
+
+
+  .speaker{
+    @include font-size(24px);
+  }
+
+  .speaker-title{
+    @include font-size(24px);
+    color: $dark_gray;
+  }
+
+  .download{
+    margin-bottom: 30px;
+  }
+
+  .smallh3{
+    @include font-size(18px);
+    font-weight: bold;
+  }
+
+  .references{
+    @include font-size(14px);
+
+    li{
+        margin-bottom: 0.673em;
+    }
+  }
+
+}
+
+// responsive layouts
+@include respond(all-phones) {
+  body {
+    > header .nav-container {
+      display: none;
+    }
+
+    #hero {
+      text-align: center;
+      padding-top: 70px;
+
+      .main-title{
+        @include font-size(30px);
+      }
+
+
+      p {
+        text-align: center;
+      }
+
+      .hero-left {
+        margin-top:40px;
+        padding-top: 30px;
+      }
+
+      .hero-right {
+        padding-left: 0;
+        padding-top: 30px;
+
+        border-left: none;
+        border-top: 1px solid $white_transparent;
+
+        .date, .location{
+          display:block;
+        }
+        .date-location-dash{
+          display:none;
+        }
+      }
+    }
+
+    .sub-hero {
+      h2{
+        @include font-size(30px);
+      }
+      p {
+        text-align: center;
+        @include font-size(14px);
+
+      }
+      .money-figure{
+        @include font-size(40px);
+      }
+    }
+
+    .schedule{
+
+      .period-time{
+        @include font-size(12px);
+      }
+
+
+        ul {
+          margin: 30px 0 0 0;
+          padding: 0;
+
+          li {
+            position: static;
+            margin-bottom: 30px;
+            background: url("../img/period_circle.png") no-repeat;
+
+            .period-time, .period-details,{
+              display: block;
+              position: static;
+
+              margin-left: 45px;
+
+            }
+
+           .period-tail{
+              display: none;
+            }
+      }
+    }
+
+      ul li .period-details{
+
+        h3{
+          @include font-size(18px);
+        }
+        .period-speaker{
+          @include font-size(14px);
+        }
+        .period-speaker-title{
+          @include font-size(14px);
+        }
+
+        .period-tweet{
+          @include font-size(14px);
+        }
+        .period-speaker-tbd{
+          @include font-size(14px);
+        }
+
+      } 
+      
+    }
+    .hackfordemocracy{
+      .hackfordemocracy-description{
+        @include font-size(14px);
+      }
+    }
+
+    .sponsors {
+      ul {
+        text-align: center;
+      }
+    }
+
+    .join-now{
+      
+      height: 400px;
+
+      h2{
+        margin-top: 25px;
+      }
+    }
+
+    .aboutus {
+      .volunteer-container {
+        text-align: center;
+        margin-bottom: 20px;
+
+      }
+
+      
+
+      a:hover {
+        color: $white !important;
+      }
+    }
+  }
+}
