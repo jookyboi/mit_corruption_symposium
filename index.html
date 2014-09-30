@@ -108,162 +108,7 @@ Or concatenate and minify into a single file -->
 <script src="js/jquery.scrollTo.min.js"></script>
 <script src="js/jquery.colorbox-min.js"></script>
 
-<!-- Page Script -->
-<script>
-    function syncMapHeight() {
-        var $map = $(".map-embed"),
-                $kresge = $(".kresge-img");
 
-        $map.css("height", $kresge.height());
-    }
-
-    var moneyStatIndex = 0,
-            moneyStats = [
-                {
-                    source: "Pharmaceutical Industry",
-                    figure: "$525 Million"
-                },
-                {
-                    source: "Defense Industry",
-                    figure: "$301 Million"
-                },
-                {
-                    source: "Lobbying &amp; Legal Industry",
-                    figure: "$275 Million"
-                },
-                {
-                    source: "Mortgage Industry",
-                    figure: "$33 Million"
-                },
-                {
-                    source: "Oil &amp; Gas Industry",
-                    figure: "$363 Million"
-                },
-                {
-                    source: "Private Prison Industry",
-                    figure: "$4 Million"
-                },
-                {
-                    source: "Construction Industry",
-                    figure: "$224 Million"
-                },
-                {
-                    source: "Labor",
-                    figure: "$240 Million"
-                },
-                {
-                    source: "Transportation Industry",
-                    figure: "$561 Million"
-                },
-                {
-                    source: "Finance Industry",
-                    figure: "$1640 Million"
-                },
-                {
-                    source: "Investment Industry",
-                    figure: "$485 Million"
-                },
-                {
-                    source: "Communications Industry",
-                    figure: "$987 Million"
-                },
-                {
-                    source: "Insurance Industry",
-                    figure: "$367 Million"
-                },
-                {
-                    source: "Healthcare Industry",
-                    figure: "$1260 Million"
-                },
-                {
-                    source: "Gun Rights",
-                    figure: "$15 Million"
-                },
-                {
-                    source: "Mining Industry",
-                    figure: "$85 Million"
-                },
-                {
-                    source: "Education Industry",
-                    figure: "$266 Million"
-                }
-            ];
-
-
-    function nextMoneyStat() {
-        var $moneyScroller = $(".money-scroller"),
-                $moneySource = $moneyScroller.find(".money-source"),
-                $moneyFigure = $moneyScroller.find(".money-figure");
-
-        moneyStatIndex++;
-
-        // loop
-        if (moneyStatIndex === moneyStats.length) {
-            moneyStatIndex = 0;
-        }
-
-        $moneySource.animate({
-            opacity: 0
-        }, 250, function() {
-            $moneySource.html(moneyStats[moneyStatIndex].source);
-
-            $moneySource.animate({
-                opacity: 1.0
-            }, 750);
-        });
-
-        $moneyFigure.animate({
-            opacity: 0
-        }, 750, function() {
-            $moneyFigure.html(moneyStats[moneyStatIndex].figure);
-
-            $moneyFigure.animate({
-                opacity: 1.0
-            }, 250);
-        });
-    }
-
-    $(function() {
-        // navigation
-        $("nav>a").each(function() {
-            $(this).click(function(evt) {
-                $.scrollTo(
-                        $(this).attr("href"),
-                        500
-                );
-
-                evt.stopPropagation();
-                evt.preventDefault();
-            });
-        });
-
-        $(".logo>a").click(function(evt) {
-            $.scrollTo(0, 500);
-
-            evt.stopPropagation();
-            evt.preventDefault();
-        });
-
-        // resizing
-        $(window).resize(function() {
-            syncMapHeight();
-        });
-
-        $(".kresge-img").load(function() {
-            syncMapHeight();
-        });
-
-        // videos
-        $(".video-link").colorbox(
-                {iframe: true, innerWidth: 640, innerHeight: 390}
-        );
-
-        // money scroller
-        var moneyScrollerInterval = setInterval(function() {
-            nextMoneyStat();
-        }, 3000);
-    });
-</script>
 </head>
 
 <body>
@@ -277,13 +122,10 @@ Or concatenate and minify into a single file -->
 
         <div class="nine columns nav-container">
             <nav>
-                <a href="#speakers">Speakers</a>
-                <a href="#schedule">Schedule</a>
-                <a href="#location">Location</a>
+                <a href="#symposium">Symposium</a>
+                <a href="#organizations">Organizations</a>
                 <a href="#hackfordemocracy">Workshop</a>
                 <a href="#aboutus">About Us</a>
-                <a href="https://citizens-rising.eventbrite.com"
-                   target="_blank">Register</a>
             </nav>
         </div>
     </div>
@@ -292,318 +134,102 @@ Or concatenate and minify into a single file -->
 <div id="hero" class="parallax" gumby-parallax="0.3">
 
     <div class="row">
-        <div class="twelve columns main-title">
-            <h2>Citizens Rising Anti-Corruption Weekend</h2>
+        <div class="push_two eight columns thankyoumessage">
+            <h1 class="maintitle">Thank you!</h1>
+
+            <p class="heavy text-left">Thank you to all who joined us for the Anti-Corruption symposium and Hack for Democracy workshop. <em>You</em> made these events possible. Together we will reclaim our democracy.</p>
+
+            <p class="heavy text-left">That means taking action. Join <a class="reverse heavy" href="#sponsors">our participating organizations</a>!</p>
         </div>
     </div>
-
-    <div class="row">
-        <div class="twelve columns thankyou">
-            <h1>Thank you!</h2>
-
-            <p>Huge thanks to the many citizens who joined us this weekend! <em>You</em> made this event possible. We extend our deepest grattitude to our speakers &#8211; Lawrence Lessig, Martin Gilens, and Josh Silver &#8211; and our <a class="reverse" href="#sponsors">participating organizations</a> and our host MIT and our many amazing volunteers &#8211; there are no better.</p>
-            
-            <h4>Stay involved!</h4>
-        </div>        
-    </div>
     <div class="row stayinvolvedbuttons">
-        <div class="six columns">
+        <div class="four columns">
              <a href="http://volunteer.represent.us/"
                    class="button" target="_blank">Join Represent.Us</a>
         </div>
-        <div class="six columns">
-         <a href="http://volunteer.represent.us/"
-               class="button" target="_blank">Join THINK</a>
+        <div class="four columns">
+            <a href="http://www.teamdemocracy.us/join"
+               class="button" target="_blank">Join Team Democracy</a>
         </div>
-    </div>
-
-    <div class="row">
-        <div class="six columns hero-left">
-            <p>
-                The <em>money spent in one election cycle</em> to<br/>
-                influence our government
-            </p>
-            <span class="icon-downwards"></span>
-
-            <p class="money-scroller">
-                <span class="money-source">Pharmaceutical Industry</span>
-                <span class="money-figure">$525 Million</span>
-                <span class="info-source">Source: Center for Responsive Politics, 2012 Lobbying and Contribution Data</span>
-            </p>
-        </div>
-        <div class="six columns hero-right">
-            <h3 class="symposium">Symposium</h3>
-            <div class="date-location">
-                <span class="date">Friday, Sept 19, 2014</span>
-                <span class="date-location-dash">&nbsp;-&nbsp;</span>
-                <span class="location">Kresge Auditorium, MIT</span>
-            </div>
-            
-            <h3 class="h4d">Hack for Democracy Workshop</h3>
-            <div class="date-location">
-                <span class="date">Saturday&#8211;Sunday, Sept 20&#8211;21, 2014</span>
-                <span class="date-location-dash">&nbsp;-&nbsp;</span>
-                <span class="location">Stata Center, MIT</span>
-            </div>
+        <div class="four columns">
+            <a href="http://www.thehighimpactnetwork.org/volunteer"
+                   class="button" target="_blank">Join THINK</a>
         </div>
     </div>
 </div>
 
-<section class="sub-hero">
+<section id="symposium" class="sub-content">
     <div class="row">
         <div class="twelve columns">
-            <h2>The US political system is broken</h2>
+            <h2>Symposium</h2>
+            <h3 class="sub-content-subtitle">Friday, September 19, 2014</h3>
+            <h3 class="sub-content-subtitle">
+            MIT Kresge Auditorium, 48 Massachusetts Ave, Cambridge, MA, 02139
+            </h3>
         </div>
     </div>
     <div class="row">
-        <div class="push_two eight columns">
-            <p>Our government has been bought.<br />We all know this, but you can change it.</p>
-
-            <p>Citizens Rising Anti-Corruption Weekend is a chance to explore how our corrupt system prevents progress on all major issues, encourages political extremism, and concentrates power among the wealthy at the expense of the rest of us. And it’s the chance to ask:</p>
-
-            <p>
-                <strong>&ldquo;What am I going to do about it?&rdquo;</strong>
-            </p>
-        </div>
-    </div>
-</section>
-
-<section class="sub-content speakers">
-    <div class="row">
-        <div class="twelve columns">
-            <h2 id="speakers">Symposium Speakers</h2>
-        </div>
-    </div>
-    <div class="row">
-        <div class="six columns">
+        <div class="four columns">
             <div class="person">
-                <a href="https://www.youtube.com/embed/i3X2eDCmPRY?autoplay=1&modestbranding=1" class="video-link">
-                    <span class="play-button"></span>
-                    <img src="img/lessig.png" alt="Lawrence Lessig"/><br/>
+                <a class="video-link" alt="Powerpoint" href="presentations/Gilens-Economic_Inequality_and_Political_Power_in_America-MIT-Sept2014.pdf">
+                    <img src="img/gilens-presenting.jpg" alt="Martin Gilens" title="Martin Gilens. Photo by Jonathan Davidson, 2014"/>
+                    <label class="button">Download Slides</label>
                 </a>
 
-                <div class="quote">&ldquo;We need to take our democracy back&rdquo;</div>
-                <div class="name">Lawrence Lessig</div>
-                <div class="bio">
-                    <p>Professor of Law at Harvard Law School, Director of the Safra Center for Ethics at Harvard
-                        University, and political activist, <a href="http://en.wikipedia.org/wiki/Lawrence_Lessig"
-                                                               target="_blank">Lawrence
-                            Lessig</a> transformed intellectual-property law when he co-founded <a
-                                href="http://creativecommons.org/" target="_blank">Creative Commons</a>. It was during
-                        his
-                        efforts to improve
-                        copyright and cyberlaw that he ran headlong into the power of money in Congress. Now Lessig aims
-                        to
-                        realize a more fundamental transformation: fixing the system of corruption in American politics.
-                        He
-                        has founded the activist organization <a href="http://www.rootstrikers.org/" target="_blank">Rootstrikers</a>,
-                        and
-                        launched <a href="https://mayday.us/" target="_blank"> MayDay PAC</a>, a crowd-funded “super PAC
-                        to
-                        destroy all
-                        super PACs”. His latest book, <a href="http://republic.lessig.org/" target="_blank"><cite>Republic,
-                            Lost</cite></a>,
-                        was a major source of inspiration for this event.</p>
-                        <p><em>Presentation coming online soon.</em></p>
-
+                <div class="presentation-details">
+                    <h3 class="presentation-title">Economic Inequality &amp; Political Power in America</h3>
+                    <h4 class="speaker-name">Martin Gilens</h4>
+                    <h4 class="speaker-title">Professor of Politics<br>Princeton University</h4>
                 </div>
+                <ul>
+                    <li><a href="presentations/Gilens-Economic_Inequality_and_Political_Power_in_America-MIT-Sept2014.pdf">Download slides</a></li>
+                    <li><a href="speakers/silver_introduction.html">Read introduction</a></li>
+                    <li><a href="http://scholar.princeton.edu/mgilens/pages/data">Get the datasets</a></li>
+                    <li><a href="gilens.html">See references</a></li>
+                </ul>
             </div>
         </div>
-        <div class="six columns">
+        <div class="four columns ">
             <div class="person">
-                <a href="http://media.mtvnservices.com/embed/mgid:arc:video:thedailyshow.com:0ae7ad4a-9358-4d0c-baca-c195d1c476f5"
-                   class="video-link">
-                    <span class="play-button"></span>
-                    <img src="img/gilens.png" alt="Martin Gilens"/><br/>
+                <a class="video-link" alt="Lawrence Lessig" href="http://youtu.be/pFZEV7TeZBg">
+                    <img src="img/lessig-presenting.jpg" alt="Lawrence Lessig" title="Lawrence Lessig. Photo by Sarah Bonk, 2014"/>
+                    <label class="button">Watch presentation</label>
                 </a>
 
-                <div class="quote">&ldquo;Average citizens have little or no independent influence&rdquo;</div>
-                <div class="name">Martin Gilens</div>
-
-                <div class="bio">
-                    <p>
-                        Professor of Politics at Princeton University, <a href="http://scholar.princeton.edu/mgilens"
-                                                                          target="_blank">Martin
-                        Gilens</a>’ research includes investigating how the wealthy have undue sway on American
-                        politics.
-                        Along with Benjamin Page of Northwestern University, Gilens authored the recent paper <a
-                            href="http://www.princeton.edu/~mgilens/Gilens%20homepage%20materials/Gilens%20and%20Page/Gilens%20and%20Page%202014-Testing%20Theories%203-7-14.pdf"
-                            target="_blank"><cite>Testing
-                        Theories of American Politics: Elites, Interest Groups, and Average Citizens</cite></a> which
-                        went
-                        viral <a href="http://www.newyorker.com/rational-irrationality/is-america-an-oligarchy"
-                                 target="_blank">in the
-                        media</a>, being cited as evidence that the U.S. is an oligarchy. Their findings show that
-                        average
-                        citizens have little or no influence on policy outcomes. When economic elites and business
-                        groups
-                        disagree with the public majority, legislators pass policy favoring the affluent. This study,
-                        along
-                        with Gilens’ latest book, <a href="http://press.princeton.edu/titles/9836.html"
-                                                     target="_blank"><cite>Affluence and
-                        Influence</cite></a>, was a major factor in motivating this event.
-                    </p>
-                    <h5><a href="gilens.html">See presentation, references, and data.</a></h5>
+                <div class="presentation-details">
+                    <h3 class="presentation-title">MAYDAY - a Plan</h3>
+                    <h4 class="speaker-name">Lawrence Lessig</h4>
+                    <h4 class="speaker-title">Professor of Law<br>Harvard University</h4>
                 </div>
+                <ul>
+                    <li><a alt="Lawrence Lessig" href="http://youtu.be/pFZEV7TeZBg">Watch presentation</a></li>
+                    <li><a class="speaker-intro-link" href="speakers/silver_introduction.html">Read introduction</a></li>
+                </ul>
+                
             </div>
-        </div>
-    </div>
-</section>
-
-<section class="sub-content schedule">
-    <div class="row">
-        <div class="twelve columns ">
-            <h2 class="light" id="schedule">Symposium Schedule</h2>
-            <h4 class="event-subtitle">A Republic Held Hostage and the Plan to Take It Back</h4>
-            <h3 class="sub-content-subtitle">Friday, September 19, 2014<h3>
             
         </div>
-    </div>
-    <div class="row">
-        <div class="push_two nine columns">
-            <ul>
-                <li>
-                    <span class="period-time">5:00 - 6:00 PM</span>
+        <div class="four columns ">
+            <div class="person">
+                <a class="video-link" alt="Powerpoint" href="presentations/Silver-Next_Steps_Heres_How_We_Win-MIT-Sept2014.pdf">
+                    <img src="img/lessig.png" alt="Josh Silver" title=""/>
+                    <label class="button">Download slides</label>
+                </a>
 
-                    <div class="period-details">
-                        <h3>Registration and Ben &amp; Jerry's Ice Cream Social</h3>
-                        <div class="period-speaker">Meet participating organizations and sample B&amp;J's ice cream!</div>
-                    </div>
-                    <div class="period-tail"></div>
-                </li>
-                <li>
-                    <span class="period-time">6:00 - 6:15 PM</span>
-
-                    <div class="period-details">
-                        <h3>Opening Remarks</h3>
-                    </div>
-                    <div class="period-tail"></div>
-                </li>
-                <li>
-                    <span class="period-time">6:20 - 6:50 PM</span>
-
-                    <div class="period-details">
-                        <h3>Economic Inequality and Political Power in America</h3>
-
-                        <div class="period-speaker">Martin Gilens</div>
-                        <div class="period-speaker-title">Professor of Politics at Princeton University</div>
-                        <div class="period-speaker-title"><a class="reverse" href="gilens.html">See slides, references, and data</a></div>
-                        <div class="period-tail"></div>
-                    </div>
-                </li>
-                <li>
-                    <span class="period-time">6:55 - 7:25 PM</span>
-
-                    <div class="period-details">
-                        <h3>MAYDAY &ndash; a plan</h3>
-
-                        <div class="period-speaker">Lawrence Lessig</div>
-                        <div class="period-speaker-title">Professor of Law at Harvard Law School</div>
-                        <div class="period-speaker-title">Presentation coming online soon</div>
-
-                        <div class="period-tail"></div>
-                    </div>
-                </li>
-                <li>
-                    <span class="period-time">7:30 - 8:10 PM</span>
-
-                    <div class="period-details">
-                        <h3>Panel Discussion with Gilens and Lessig</h3>
-                        <div class="period-speaker">Nadeem Mazen</div>
-                        <div class="period-speaker-title">Panel moderator &amp; Cambridge City Councillor</div>
-                        <div class="period-tweet">Tweet questions <a href="http://twitter.com/home/?status=@Citizens_Rising" target="_blank" class="reverse">@Citizens_Rising</a></div>
-                        <div class="period-tail"></div>
-                    </div>
-                </li>
-                <li>
-                    <span class="period-time">8:10 - 8:20 PM</span>
-
-                    <div class="period-details">
-                        <h3>Next Steps: Here's How We Win</h3>
-
-                        <div class="period-speaker">Josh Silver</div>
-                        <div class="period-speaker-title">Director of Represent.Us</div>
-                    </div>
-                    <div class="period-tail"></div>
-                </li>
-                <li>
-                    <span class="period-time">8:20 - 9:00 PM</span>
-
-                    <div class="period-details">
-                        <h3>Network with Partner Organizations</h3>
-                    </div>
-                </li>
-
-            </ul>
-        </div>
-    </div>
-</section>
-
-<section class="sub-content location">
-    <div class="row">
-        <div class="twelve columns">
-            <h2 id="location" class="light-red">Symposium Location</h2>
-        </div>
-    </div>
-    <div class="row">
-        <div class="twelve columns">
-            <h3>Kresge Auditorium - MIT</h3>
-
-            <address>
-                <a class="light"
-                   href="https://www.google.com/maps/place/Kresge+Oval/@42.3584151,-71.0945196,18z/data=!4m2!3m1!1s0x89e37a007ef728c5:0x29a5ee081440d7e9"
-                   target="_blank">48
-                    Mass. Ave, Cambridge, MA 02139</a>
-            </address>
-        </div>
-    </div>
-    <div class="row map-container">
-        <div class="six columns">
-            <iframe class="map-embed"
-                    src="https://www.google.com/maps/embed/v1/place?q=Kresge%20Auditorium%2C%20Massachusetts%20Institute%20of%20Technology%2C%20Cambridge%2C%20MA%2002139&key=AIzaSyAsLixWPu4Lb5SZcaQecPoMifP4HFTM-Oo"></iframe>
-        </div>
-        <div class="six columns">
-            <img class="kresge-img" alt="Kresge Auditorium" src="img/kresge.jpg"/>
-        </div>
-    </div>
-</section>
-
-<section class="sub-content hackfordemocracy" id="hackfordemocracy">
-    <div class="row">
-        <div class="twelve columns ">
-            <h2 class="light" >Hack for Democracy Workshop</h2>
-            <div class="workshop-date-location"> 
-                <h3 class="sub-content-subtitle">Saturday &amp; Sunday, September 20&#8211;21, 2014</h3>
-                <h3 class="sub-content-subtitle">
-                    <a href="https://maps.google.com/maps/ms?msa=0&msid=202366557140680997331.0004616eceea6d79dc5d1&ie=UTF8&ll=42.362127,-71.090255&spn=0.004955,0.009602&t=m&z=17&vpsrc=1&iwloc=0004616ed2d3088520916">MIT Stata Center, 32 Vassar Street, Cambridge, MA 02139</a>
-                </h3>
+                <div class="presentation-details">
+                    <h3 class="presentation-title">Next Steps: Here's How We Win</h3>
+                    <h4 class="speaker-name">Josh Silver</h4>
+                    <h4 class="speaker-title">Director of Represent.Us</h4>
+                </div>
+                <ul>
+                    <li><a alt="Powerpoint" href="presentations/Silver-Next_Steps_Heres_How_We_Win-MIT-Sept2014.pdf">Download slides</a></li>
+                    <li><a href="speakers/silver_introduction.html">Read introduction</a></li>
+                </ul>
+                
             </div>
-        </div>
-    </div>
-    <div class="row">
-        <div class="push_two eight columns hackfordemocracy-description">
-            
-            <p>Calling all designers, developers, thinkers, and doers! Immerse yourself for 2 days with talented activists to create, innovate, and build real projects to get money out of politics. <a href="https://hackfordemocracy-boston.eventbrite.com"
-                target="_blank">See the full schedule and details on the registration page.</a></p>
-            
-            <h4>Projects</h4>
-            <p>Join one of our existing projects or propose your own! Projects can include marketing campaigns, videos, software, websites, or anything to support the movement to create representative democracy.</p>
-
-            <h4>Who should attend?</h4>
-            <p>Anyone who wants to make a difference. If you have a skill you'd like lend to the cause &mdash; writing, art, graphic design, web or software development, UX, marketing, political strategy &mdash; <a href="https://hackfordemocracy-boston.eventbrite.com" >you should attend!</a></p>
-
             
         </div>
-    </div>
-</section>
 
-<section class="sub-content join-now parallax" gumby-parallax="0.1">
-    <div class="row">
-        <div class="twelve columns">
-            <h2>Join the movement</h2>
-            <a href="http://volunteer.represent.us/"
-               class="button" target="_blank">Sign up with Represent.Us</a>
-        </div>
     </div>
 </section>
 
@@ -669,6 +295,54 @@ Or concatenate and minify into a single file -->
         </div>
     </div>
 </section>
+
+
+
+<section class="sub-content hackfordemocracy" id="hackfordemocracy">
+    <div class="row">
+        <div class="twelve columns ">
+            <h2 class="light" >Hack for Democracy Workshop</h2>
+            <div class="workshop-date-location"> 
+                <h3 class="sub-content-subtitle">Saturday &amp; Sunday, September 20&#8211;21, 2014</h3>
+                <h3 class="sub-content-subtitle">
+                MIT Stata Center, 32 Vassar Street, Cambridge, MA 02139
+                </h3>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="push_two eight columns hackfordemocracy-description">
+            
+            <p>For two days, designers, developers, thinkers, and activists immersed themselves with our participating organizations and created real projects to get money out of politics! We're goint to make this a regular event. Stay in the loop and <a href="http://www.teamdemocracy.us/join" target="_blank">join Team Democracy</a>!</p>
+            <div class="action-area">
+                <a class="button" href="https://hackfordemocracy.hackpad.com/">View Projects</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="sub-content join-now parallax" gumby-parallax="0.1">
+    <div class="row">
+        <div class="twelve columns">
+            <h2>Join the movement</h2>
+        </div>
+    </div>
+        <div class="row stayinvolvedbuttons">
+        <div class="four columns">
+             <a href="http://volunteer.represent.us/"
+                   class="button" target="_blank">Join Represent.Us</a>
+        </div>
+        <div class="four columns">
+            <a href="http://www.teamdemocracy.us/join"
+               class="button" target="_blank">Join Team Democracy</a>
+        </div>
+        <div class="four columns">
+            <a href="http://www.thehighimpactnetwork.org/volunteer"
+                   class="button" target="_blank">Join THINK</a>
+        </div>
+    </div>
+</section>
+
 
 <section class="sub-content aboutus">
     <div class="row">
