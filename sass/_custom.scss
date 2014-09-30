@@ -22,7 +22,42 @@ $yellow: #FFFC19;
   background: url('../img/downwards.png') no-repeat 0 0;
 }
 
-// Buttons
+
+
+
+// Page
+body {
+  font-family: 'Open Sans', Arial, sans-serif;
+
+  a{
+    color:$dark_red;
+    &:hover {
+      color: $black;
+    }
+
+    &.light {
+      color: $light_red;
+
+      &:hover {
+        color: $black;
+      }
+
+      &:active {
+        color: $white;
+      }
+    }
+
+    &.reverse{
+      color:$light_red;
+
+      &:hover {
+        color: $white;
+      }
+
+    }
+  }
+
+  // Buttons
 .button {
   display: inline-block;
   padding: 8px 30px 10px 30px;
@@ -41,36 +76,6 @@ $yellow: #FFFC19;
     color: $white !important;
   }
 }
-
-a{
-  color:$dark_red;
-}
-
-// Page
-body {
-  font-family: 'Open Sans', Arial, sans-serif;
-
-  a[href] {
-    &:hover {
-      color: $black;
-    }
-
-    &.light {
-      color: $light_red;
-
-      &:hover {
-        color: $black;
-      }
-
-      &:active {
-        color: $white;
-      }
-    }
-
-    &.reverse:hover {
-      color: $white;
-    }
-  }
 
   > header {
     width: 100%;
@@ -128,8 +133,8 @@ body {
   }
 
   #hero {
-    padding-top: 70px;
-    padding-bottom: 30px;
+    padding-top: 90px;
+    padding-bottom: 40px;
 
     color: $white;
     background: $black url("../img/hero_banner.jpg");
@@ -143,8 +148,10 @@ body {
       color:$white;
       padding:0 20px 20px 20px;
 
+
+
       .maintitle {
-        @include font-size(40px);
+        @include font-size(80px);
         color: $white;
         font-weight: 600;
         padding-bottom: 15px;
@@ -274,7 +281,6 @@ body {
       .presentation-details {
         width: 100%;
         margin-right: 15px;
-        margin-bottom: 15px;
       }
       .presentation-title{
         @include font-size(24px);
