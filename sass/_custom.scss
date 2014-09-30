@@ -22,30 +22,15 @@ $yellow: #FFFC19;
   background: url('../img/downwards.png') no-repeat 0 0;
 }
 
-// Buttons
-.button {
-  display: inline-block;
-  padding: 5px 30px;
 
-  background-color: $red;
-  color: $white;
-  font-weight: $font-weight-bold;
-  border-radius: 5px;
 
-  transition: background-color 0.1s;
-  text-transform: uppercase;
-
-  &:hover {
-    background-color: $dark_red;
-    color: $white !important;
-  }
-}
 
 // Page
 body {
   font-family: 'Open Sans', Arial, sans-serif;
 
-  a[href] {
+  a{
+    color:$dark_red;
     &:hover {
       color: $black;
     }
@@ -62,10 +47,35 @@ body {
       }
     }
 
-    &.reverse:hover {
-      color: $white;
+    &.reverse{
+      color:$light_red;
+
+      &:hover {
+        color: $white;
+      }
+
     }
   }
+
+  // Buttons
+.button {
+  display: inline-block;
+  padding: 8px 30px 10px 30px;
+
+  background-color: $red;
+  color: $white;
+  font-weight: $font-weight-bold;
+  border-radius: 5px;
+
+  transition: background-color 0.1s;
+  text-transform: uppercase;
+  text-align: center;
+
+  &:hover {
+    background-color: $dark_red;
+    color: $white !important;
+  }
+}
 
   > header {
     width: 100%;
@@ -123,96 +133,46 @@ body {
   }
 
   #hero {
-    padding-top: 70px;
-    padding-bottom: 30px;
+    padding-top: 90px;
+    padding-bottom: 40px;
 
     color: $white;
     background: $black url("../img/hero_banner.jpg");
     background-size: cover;
 
-    
-    h2 {
-        @include font-size(40px);
+    .thankyoumessage{
+      //background-color: transparentize($black, 0.8);
+      border-radius:5px;
+      text-align: center;
+      
+      color:$white;
+      padding:0 20px 20px 20px;
+
+
+
+      .maintitle {
+        @include font-size(80px);
         color: $white;
         font-weight: 600;
         padding-bottom: 15px;
         text-align:center;
+      }
+      .heavy{
+        font-weight: 700;
+      }
+
+      .text-left{
+        text-align: left;
+      }
+
     }
 
-    .hero-left {
-      margin-top: 43px;
+
+    .button{
       text-align: center;
-
-      p {
-        font-weight: $font-weight-bold;
-        color: $red;
-      }
-
-      em {
-        font-style: normal;
-        color: $white;
-      }
-
-      .money-source {
-        display: block;
-        text-transform: uppercase;
-        color: $red;
-      }
-
-      .money-figure {
-        margin: 10px 0;
-
-        display: block;
-        text-transform: uppercase;
-
-        color: $white;
-        @include font-size(34px);
-
-      }
-
-      .info-source {
-        display: block;
-
-        margin-top: 19px;
-        @include font-size(10px);
-
-        color: $dark_gray;
-
-        line-height:1rem;
-      }
-    }
-
-    .hero-right {
-      margin-top: 10px;
-      padding-left: 30px;
-      padding-top: 10px;
-      border-left: 1px solid $white_transparent;
-
-
-      > h3{
-        padding-top:0;
-        padding-bottom: 0;
-        color: $white;
-        @include font-size(20px);
-        font-weight: $font-weight-semibold;
-      }
-
-      .date-location{
-        margin-bottom: 5px;
-      }
-
-      .date, .location,  .date-location-dash{
-        display: inline-block;
-      }
-
-      .button{
-        margin-bottom:30px;
-      }
-      .button:first-of-type{
-        margin-bottom:40px;
-      }
-
-      
+      display: block;
+      margin-bottom: 20px;
+      margin-top:15px;
     }
   }
 
@@ -262,26 +222,7 @@ body {
         }
       }
   }
-
-  .sub-hero {
-    padding: 40px 0;
-    background-color: $beige;
-    text-align: center;
-
-    h2 {
-      margin-bottom: 30px;
-    }
-
-    p {
-      @include font-size(22px);
-
-      &.first-line {
-        @include font-size(28px);
-      }
-    }
-  }
-
-  .sub-content {
+  .sub-content{
     position: relative;
     padding: 40px 0;
 
@@ -290,18 +231,20 @@ body {
       text-align: center;
 
       @include font-size(34px);
-
-      &.light {
-        color: $dark_gray;
-      }
-
-      &.light-red {
-        color: $light_red;
-      }
     }
+
+  }
+  .sub-content-subtitle{
+      @include font-size(20px);
+      margin-bottom:5px;
+      padding:0;
+      text-align:center;
   }
 
-  .speakers {
+
+
+  #symposium {
+    background-color:$beige;
     .person {
       position: relative;
       margin-top: 30px;
@@ -333,128 +276,54 @@ body {
 
       img {
         margin-bottom: -7px;
+      }
+
+      .presentation-details {
+        width: 100%;
+        margin-right: 15px;
+      }
+      .presentation-title{
+        @include font-size(24px);
+        font-weight: 600;
+
+      }
+
+      .speaker-name{
+        @include font-size(18px);
+        margin-bottom: 0;
+        padding-bottom:0;
+        font-weight: normal;
+
+      }
+      .speaker-title{
+        @include font-size(18px);
+      }
+
+      .video-link .button{
+        margin:0 0 15px 0;
+        display: block;
+        border-radius:0;
+        padding: 3px 0;
+        @include font-size(14px);
         cursor: pointer;
       }
 
-      .quote {
-        width: 100%;
-        padding: 15px;
-
-        background: $black;
-        color: $white;
-        font-style: italic;
-        text-align: center;
-
-        @include font-size(14px);
+      .video-link:hover .button{
+        background-color:$dark_red;
       }
 
-      .name {
-        padding: 15px;
-
-        background-color: $red;
-        color: $white;
-
-        text-align: center;
-
-        @include font-size(26px);
-        font-weight: $font-weight-bold;
+      .speaker-intro-link{
+        margin-bottom: 15px;
       }
 
-      .bio {
-        padding: 10px;
-
-        > p {
-          @include font-size(14px);
+      .references{
+        li{
+          margin-bottom:10px;
+          @include font-size(12px);
+          line-height: 1.4em;
         }
       }
-    }
-  }
 
-  .schedule {
-    background-color: $black;
-    color: $white;
-
-    .sub-content-subtitle{
-      color:$white;
-      text-align: center;
-      @include font-size(18px);
-
-    }
-
-    .event-subtitle{
-      color:$white;
-      text-align: center;
-      @include font-size (26px);
-
-    }
-
-    p {
-      @include font-size(22px);
-      text-align: center;
-
-      &:first-child {
-        margin-top: 30px;
-      }
-    }
-
-    ul {
-      margin: 30px 0 0 0;
-      padding: 0;
-
-      li {
-        position: relative;
-        margin-bottom: 30px;
-        background: url("../img/period_circle.png") no-repeat 120px 3px;
-
-        .period-time {
-          position: absolute;
-          top: 3px;
-          left: 0;
-
-          color: $red;
-          font-weight: bold;
-        }
-
-        .period-details {
-          display: inline-block;
-          margin-left: 163px;
-
-          h3 {
-            @include font-size(20px);
-            font-weight: $font-weight-bold;
-            color: $white;
-          }
-
-          .period-speaker {
-            margin-top: 8px;
-          }
-
-          .period-tweet {
-            padding-left: 25px;
-            background: url('../img/twitter_icon.png') no-repeat 0 50%;
-            background-size: 20px 16px;
-          }
-
-          .period-speaker-title, .period-speaker-tbd {
-            color: $dark_gray;
-          }
-
-          .period-speaker-tbd {
-            margin-top: 10px;
-          }
-        }
-
-        .period-tail {
-          position: absolute;
-          left: 133px;
-          top: 38px;
-
-          background: $red;
-
-          width: 4px;
-          height: calc(100% - 10px);
-        }
-      }
     }
   }
 
@@ -476,6 +345,7 @@ body {
 
     .button {
       margin-bottom: 20px;
+      margin-top: 15px;
       padding: 10px 30px;
       display: block;
     }
@@ -507,13 +377,7 @@ body {
   }
 
   .hackfordemocracy{
-    h3{
-      @include font-size(20px);
-      margin-bottom:5px;
-      padding:0;
-      text-align:center;
-    }
-
+    background-color: $beige;
     .workshop-date-location{
       margin-bottom:20px;
     }
@@ -619,10 +483,11 @@ body {
   .smallh3{
     @include font-size(18px);
     font-weight: bold;
+    margin-bottom: 10px;
   }
 
   .references{
-    @include font-size(14px);
+    @include font-size(16px);
 
     li{
         margin-bottom: 0.673em;
@@ -662,6 +527,7 @@ body {
 
         border-left: none;
         border-top: 1px solid $white_transparent;
+        height:215px;
 
         .date, .location{
           display:block;
@@ -669,6 +535,12 @@ body {
         .date-location-dash{
           display:none;
         }
+
+        > .h4d{
+          padding-top:30px
+        }
+
+
       }
     }
 
@@ -741,6 +613,7 @@ body {
     .hackfordemocracy{
       .hackfordemocracy-description{
         @include font-size(14px);
+
       }
     }
 

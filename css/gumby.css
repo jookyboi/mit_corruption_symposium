@@ -1768,15 +1768,16 @@ table.rounded thead th, table.rounded thead td, table.rounded caption + tbody tr
 
 .icon-downwards { width: 20px; height: 23px; display: inline-block; margin-bottom: 10px; background: url("../img/downwards.png") no-repeat 0 0; }
 
-.button { display: inline-block; padding: 5px 30px; background-color: #bb4836; color: white; font-weight: 700; border-radius: 5px; transition: background-color 0.1s; text-transform: uppercase; }
-.button:hover { background-color: #892212; color: white !important; }
-
 body { font-family: 'Open Sans', Arial, sans-serif; }
-body a[href]:hover { color: #240905; }
-body a[href].light { color: #f39385; }
-body a[href].light:hover { color: #240905; }
-body a[href].light:active { color: white; }
-body a[href].reverse:hover { color: white; }
+body a { color: #892212; }
+body a:hover { color: #240905; }
+body a.light { color: #f39385; }
+body a.light:hover { color: #240905; }
+body a.light:active { color: white; }
+body a.reverse { color: #f39385; }
+body a.reverse:hover { color: white; }
+body .button { display: inline-block; padding: 8px 30px 10px 30px; background-color: #bb4836; color: white; font-weight: 700; border-radius: 5px; transition: background-color 0.1s; text-transform: uppercase; text-align: center; }
+body .button:hover { background-color: #892212; color: white !important; }
 body > header { width: 100%; position: fixed; top: 0; z-index: 100; padding: 7px 0 0 0; color: white; background-color: #892212; box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5); }
 body > header .logo { font-size: 20px; font-weight: 700; }
 body > header .logo > a { color: white; }
@@ -1786,20 +1787,12 @@ body > header .nav-container > nav > a { display: inline-block; margin-left: 25p
 body > header .nav-container > nav > a:first-child { margin: 0; }
 body > header .nav-container > nav > a:last-child { color: #fffc19; }
 body > header .nav-container > nav > a:hover { color: #240905; }
-body #hero { padding-top: 70px; padding-bottom: 30px; color: white; background: #240905 url("../img/hero_banner.jpg"); background-size: cover; }
-body #hero h2 { font-size: 40px; font-size: 2.5rem; color: white; font-weight: 600; padding-bottom: 15px; text-align: center; }
-body #hero .hero-left { margin-top: 43px; text-align: center; }
-body #hero .hero-left p { font-weight: 700; color: #bb4836; }
-body #hero .hero-left em { font-style: normal; color: white; }
-body #hero .hero-left .money-source { display: block; text-transform: uppercase; color: #bb4836; }
-body #hero .hero-left .money-figure { margin: 10px 0; display: block; text-transform: uppercase; color: white; font-size: 34px; font-size: 2.125rem; }
-body #hero .hero-left .info-source { display: block; margin-top: 19px; font-size: 10px; font-size: 0.625rem; color: #777777; line-height: 1rem; }
-body #hero .hero-right { margin-top: 10px; padding-left: 30px; padding-top: 10px; border-left: 1px solid rgba(255, 255, 255, 0.5); }
-body #hero .hero-right > h3 { padding-top: 0; padding-bottom: 0; color: white; font-size: 20px; font-size: 1.25rem; font-weight: 600; }
-body #hero .hero-right .date-location { margin-bottom: 5px; }
-body #hero .hero-right .date, body #hero .hero-right .location, body #hero .hero-right .date-location-dash { display: inline-block; }
-body #hero .hero-right .button { margin-bottom: 30px; }
-body #hero .hero-right .button:first-of-type { margin-bottom: 40px; }
+body #hero { padding-top: 90px; padding-bottom: 40px; color: white; background: #240905 url("../img/hero_banner.jpg"); background-size: cover; }
+body #hero .thankyoumessage { border-radius: 5px; text-align: center; color: white; padding: 0 20px 20px 20px; }
+body #hero .thankyoumessage .maintitle { font-size: 80px; font-size: 5rem; color: white; font-weight: 600; padding-bottom: 15px; text-align: center; }
+body #hero .thankyoumessage .heavy { font-weight: 700; }
+body #hero .thankyoumessage .text-left { text-align: left; }
+body #hero .button { text-align: center; display: block; margin-bottom: 20px; margin-top: 15px; }
 body .sub-content.share { background-color: #240905; text-align: center; padding: 10px 0; }
 body .sub-content.share .share { display: inline; vertical-align: middle; }
 body .sub-content.share .share > a { display: inline-block; margin-top: 5px; margin-right: 50px; opacity: 0.8; }
@@ -1807,46 +1800,31 @@ body .sub-content.share .share > a:hover { opacity: 1.0; }
 body .sub-content.share .share .share-email { width: 31px; height: 20px; background: url("../img/email_icon.png") no-repeat 0 0; }
 body .sub-content.share .share .share-twitter { width: 25px; height: 20px; background: url("../img/twitter_icon.png") no-repeat 0 0; }
 body .sub-content.share .share .share-facebook { width: 20px; height: 20px; background: url("../img/facebook_icon.png") no-repeat 0 0; margin-right: 0; }
-body .sub-hero { padding: 40px 0; background-color: #e8e6df; text-align: center; }
-body .sub-hero h2 { margin-bottom: 30px; }
-body .sub-hero p { font-size: 22px; font-size: 1.375rem; }
-body .sub-hero p.first-line { font-size: 28px; font-size: 1.75rem; }
 body .sub-content { position: relative; padding: 40px 0; }
 body .sub-content h2 { text-transform: uppercase; text-align: center; font-size: 34px; font-size: 2.125rem; }
-body .sub-content h2.light { color: #777777; }
-body .sub-content h2.light-red { color: #f39385; }
-body .speakers .person { position: relative; margin-top: 30px; }
-body .speakers .person .video-link { position: relative; display: block; }
-body .speakers .person .video-link .play-button { position: absolute; margin-left: -20px; margin-top: -25px; left: 50%; top: 50%; display: inline-block; width: 50px; height: 60px; background: url("../img/play_button.png") no-repeat 0 0; opacity: 0.5; }
-body .speakers .person .video-link:hover .play-button { opacity: 0.8; }
-body .speakers .person img { margin-bottom: -7px; cursor: pointer; }
-body .speakers .person .quote { width: 100%; padding: 15px; background: #240905; color: white; font-style: italic; text-align: center; font-size: 14px; font-size: 0.875rem; }
-body .speakers .person .name { padding: 15px; background-color: #bb4836; color: white; text-align: center; font-size: 26px; font-size: 1.625rem; font-weight: 700; }
-body .speakers .person .bio { padding: 10px; }
-body .speakers .person .bio > p { font-size: 14px; font-size: 0.875rem; }
-body .schedule { background-color: #240905; color: white; }
-body .schedule .sub-content-subtitle { color: white; text-align: center; font-size: 18px; font-size: 1.125rem; }
-body .schedule .event-subtitle { color: white; text-align: center; font-size: 26px; font-size: 1.625rem; }
-body .schedule p { font-size: 22px; font-size: 1.375rem; text-align: center; }
-body .schedule p:first-child { margin-top: 30px; }
-body .schedule ul { margin: 30px 0 0 0; padding: 0; }
-body .schedule ul li { position: relative; margin-bottom: 30px; background: url("../img/period_circle.png") no-repeat 120px 3px; }
-body .schedule ul li .period-time { position: absolute; top: 3px; left: 0; color: #bb4836; font-weight: bold; }
-body .schedule ul li .period-details { display: inline-block; margin-left: 163px; }
-body .schedule ul li .period-details h3 { font-size: 20px; font-size: 1.25rem; font-weight: 700; color: white; }
-body .schedule ul li .period-details .period-speaker { margin-top: 8px; }
-body .schedule ul li .period-details .period-tweet { padding-left: 25px; background: url("../img/twitter_icon.png") no-repeat 0 50%; background-size: 20px 16px; }
-body .schedule ul li .period-details .period-speaker-title, body .schedule ul li .period-details .period-speaker-tbd { color: #777777; }
-body .schedule ul li .period-details .period-speaker-tbd { margin-top: 10px; }
-body .schedule ul li .period-tail { position: absolute; left: 133px; top: 38px; background: #bb4836; width: 4px; height: calc(100% - 10px); }
+body .sub-content-subtitle { font-size: 20px; font-size: 1.25rem; margin-bottom: 5px; padding: 0; text-align: center; }
+body #symposium { background-color: #e8e6df; }
+body #symposium .person { position: relative; margin-top: 30px; }
+body #symposium .person .video-link { position: relative; display: block; }
+body #symposium .person .video-link .play-button { position: absolute; margin-left: -20px; margin-top: -25px; left: 50%; top: 50%; display: inline-block; width: 50px; height: 60px; background: url("../img/play_button.png") no-repeat 0 0; opacity: 0.5; }
+body #symposium .person .video-link:hover .play-button { opacity: 0.8; }
+body #symposium .person img { margin-bottom: -7px; }
+body #symposium .person .presentation-details { width: 100%; margin-right: 15px; }
+body #symposium .person .presentation-title { font-size: 24px; font-size: 1.5rem; font-weight: 600; }
+body #symposium .person .speaker-name { font-size: 18px; font-size: 1.125rem; margin-bottom: 0; padding-bottom: 0; font-weight: normal; }
+body #symposium .person .speaker-title { font-size: 18px; font-size: 1.125rem; }
+body #symposium .person .video-link .button { margin: 0 0 15px 0; display: block; border-radius: 0; padding: 3px 0; font-size: 14px; font-size: 0.875rem; cursor: pointer; }
+body #symposium .person .video-link:hover .button { background-color: #892212; }
+body #symposium .person .speaker-intro-link { margin-bottom: 15px; }
+body #symposium .person .references li { margin-bottom: 10px; font-size: 12px; font-size: 0.75rem; line-height: 1.4em; }
 body .join-now { height: 330px; background: #240905 url("../img/light_brigade.jpg"); background-size: cover; text-align: center; text-align: center; }
 body .join-now h2 { margin-top: 58px; color: white; margin-bottom: 20px; }
-body .join-now .button { margin-bottom: 20px; padding: 10px 30px; display: block; }
+body .join-now .button { margin-bottom: 20px; margin-top: 15px; padding: 10px 30px; display: block; }
 body .sub-content.location { background-color: #892212; text-align: center; }
 body .sub-content.location h3 { margin-top: 20px; color: white; font-size: 30px; font-size: 1.875rem; }
 body .sub-content.location .map-container { margin-top: 40px; }
 body .sub-content.location .map-container .map-embed { width: 100%; height: 305px; border: 0; }
-body .hackfordemocracy h3 { font-size: 20px; font-size: 1.25rem; margin-bottom: 5px; padding: 0; text-align: center; }
+body .hackfordemocracy { background-color: #e8e6df; }
 body .hackfordemocracy .workshop-date-location { margin-bottom: 20px; }
 body .hackfordemocracy h4 { text-align: center; }
 body .hackfordemocracy ul { list-style: disc outside; }
@@ -1869,8 +1847,8 @@ body .aboutus abbr { text-transform: uppercase; font-size: 90%; color: white; bo
 #references .speaker { font-size: 24px; font-size: 1.5rem; }
 #references .speaker-title { font-size: 24px; font-size: 1.5rem; color: #777777; }
 #references .download { margin-bottom: 30px; }
-#references .smallh3 { font-size: 18px; font-size: 1.125rem; font-weight: bold; }
-#references .references { font-size: 14px; font-size: 0.875rem; }
+#references .smallh3 { font-size: 18px; font-size: 1.125rem; font-weight: bold; margin-bottom: 10px; }
+#references .references { font-size: 16px; font-size: 1rem; }
 #references .references li { margin-bottom: 0.673em; }
 
 @media only screen and (max-width: 767px) { body > header .nav-container { display: none; }
@@ -1878,9 +1856,10 @@ body .aboutus abbr { text-transform: uppercase; font-size: 90%; color: white; bo
   body #hero .main-title { font-size: 30px; font-size: 1.875rem; }
   body #hero p { text-align: center; }
   body #hero .hero-left { margin-top: 40px; padding-top: 30px; }
-  body #hero .hero-right { padding-left: 0; padding-top: 30px; border-left: none; border-top: 1px solid rgba(255, 255, 255, 0.5); }
+  body #hero .hero-right { padding-left: 0; padding-top: 30px; border-left: none; border-top: 1px solid rgba(255, 255, 255, 0.5); height: 215px; }
   body #hero .hero-right .date, body #hero .hero-right .location { display: block; }
   body #hero .hero-right .date-location-dash { display: none; }
+  body #hero .hero-right > .h4d { padding-top: 30px; }
   body .sub-hero h2 { font-size: 30px; font-size: 1.875rem; }
   body .sub-hero p { text-align: center; font-size: 14px; font-size: 0.875rem; }
   body .sub-hero .money-figure { font-size: 40px; font-size: 2.5rem; }
