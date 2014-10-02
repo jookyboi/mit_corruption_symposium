@@ -1806,14 +1806,14 @@ body .sub-content-subtitle { font-size: 20px; font-size: 1.25rem; margin-bottom:
 body #symposium { background-color: #e8e6df; }
 body #symposium .person { position: relative; margin-top: 30px; }
 body #symposium .person .video-link { position: relative; display: block; }
-body #symposium .person .video-link .play-button { position: absolute; margin-left: -20px; margin-top: -25px; left: 50%; top: 50%; display: inline-block; width: 50px; height: 60px; background: url("../img/play_button.png") no-repeat 0 0; opacity: 0.5; }
-body #symposium .person .video-link:hover .play-button { opacity: 0.8; }
+body #symposium .person .video-link .play-button { position: absolute; margin-left: -20px; margin-top: -35px; left: 50%; top: 50%; display: inline-block; width: 60px; height: 60px; background: url("../img/play_button.png") no-repeat 0 0; opacity: 0.5; }
+body #symposium .person .video-link:hover .play-button { opacity: 1.0; background: url("../img/play_button_hover.png") no-repeat 0 0; }
 body #symposium .person img { margin-bottom: -7px; }
 body #symposium .person .presentation-details { width: 100%; margin-right: 15px; }
-body #symposium .person .presentation-title { font-size: 24px; font-size: 1.5rem; font-weight: 600; }
+body #symposium .person .presentation-title { padding-top: 0; font-size: 24px; font-size: 1.5rem; font-weight: 600; }
 body #symposium .person .speaker-name { font-size: 18px; font-size: 1.125rem; margin-bottom: 0; padding-bottom: 0; font-weight: normal; }
 body #symposium .person .speaker-title { font-size: 18px; font-size: 1.125rem; }
-body #symposium .person .video-link .button { margin: 0 0 15px 0; display: block; border-radius: 0; padding: 3px 0; font-size: 14px; font-size: 0.875rem; cursor: pointer; }
+body #symposium .person .video-link .button { margin: 0 0 15px 0; display: block; border-radius: 0; padding: 3px 0; font-size: 12px; font-size: 0.75rem; cursor: pointer; }
 body #symposium .person .video-link:hover .button { background-color: #892212; }
 body #symposium .person .speaker-intro-link { margin-bottom: 15px; }
 body #symposium .person .references li { margin-bottom: 10px; font-size: 12px; font-size: 0.75rem; line-height: 1.4em; }
